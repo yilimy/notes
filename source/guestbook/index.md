@@ -8,3 +8,6 @@ type: "guestbook"
 所以，我把我的爱情和忧伤挂在墙上展览，并且出售。 *
 
 </blockquote>
+
+> 最近访客
+<div class="ds-recent-visitors" data-num-items="28" data-avatar-size="42" id="ds-recent-visitors"></div>
