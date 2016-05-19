@@ -6,7 +6,7 @@ categories: 学习笔记
 ---
 > 生命在于折腾！
 
-hexo博客的安装和使用本文不再讲述。见文章：[用hexo建博客](http://blog.ynxiu.com/2016/hexo-you-blog-2016-04-27.html "用hexo建博客")
+hexo博客的安装和使用本文不再讲述。见文章：[用hexo建博客](http://blog.ynxiu.com/2016/hexo-you-blog.html "用hexo建博客")
 
 在coding和github上建立pages项目，按要求建立。不会的自行百度。
 

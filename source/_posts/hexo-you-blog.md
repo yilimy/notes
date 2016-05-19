@@ -99,7 +99,7 @@ hexo generate
 ```
 hexo server
 ```
-浏览器输入http://localhost:4000就可以看到效果。
+浏览器输入`http://localhost:4000`就可以看到效果。
 
 > 请使用高级浏览器，否则可能…你懂的！
 
@@ -392,7 +392,7 @@ npm update
 ```
 
 # 换机器 #
-你要保留好自己的博客源码。请查看我的另一篇博文。[多台电脑维护hexo博客 ](http://blog.ynxiu.com/2016/hexo-gaidong-2016-04-27.html "多台电脑维护hexo博客 ")
+你要保留好自己的博客源码。请查看我的另一篇博文。[多台电脑维护hexo博客 ](http://blog.ynxiu.com/2016/hexo-gaidong.html "多台电脑维护hexo博客 ")
 
 本文转自----[不知-hexo你的博客](http://ibruce.info/2013/11/22/hexo-your-blog/ "hexo你的博客 ")。
 
