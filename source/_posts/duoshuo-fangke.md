@@ -1,5 +1,5 @@
 ---
-title: NexT主题新建'留言'页面
+title: NexT主题'留言'页面增加最近访客
 date: 2016-05-19 12:43:30
 tags: [hexo,多说]
 categories: 学习笔记
