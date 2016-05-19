@@ -11,6 +11,10 @@ categories: 学习笔记
 ## 在菜单中添加guestbook ##
 
 修改主题配置文件_config.yml（要注意是NexT目录下的_config.yml，不是hexo站点目录下的_config.yml），即hexo初始化目录下的/themes/next/_config.yml，添加 guestbook 到 menu 中:
+
+<!--more-->
+
+
 ```
 menu:
   home: /  
@@ -22,9 +26,7 @@ menu:
   guestbook: /guestbook
 ```
 
-这样就在网站menu中增加了一个菜单：guestbook，此时留言板还没有真的实现。 
-
-<!--more-->
+这样就在网站menu中增加了一个菜单：guestbook，此时留言板还没有真的实现。
 
 添加对应译文显示
 
