@@ -10,12 +10,12 @@ comments: false
 
 ### Blog friends
 
-* [Dobila](https://github.com/eorza "Dobila")&nbsp;&nbsp;很友好的一个朋友
-* [likebeta's Blog](http://blog.ixxoo.me/ "likebeta's")&nbsp;&nbsp;做出来的页面真心很赞
-* [Havee's Space](http://havee.me/ "Havee's Space")&nbsp;&nbsp;技术性很强
-* [pinghailinfeng'blog](https://jeffsui.github.io/ "pinghailinfeng'blog")&nbsp;&nbsp;凭海临风的博客git相关
-* [IIssNan's Notes](http://notes.iissnan.com/ "IIssNan's Notes")&nbsp;&nbsp;NexT主题作者
-* [平凡梦想](http://blog.rechar.net/ "毛毛的博客")&nbsp;&nbsp;毛毛的博客
+- [Dobila](https://github.com/eorza "Dobila")&nbsp;&nbsp;很友好的一个朋友
+- [likebeta's Blog](http://blog.ixxoo.me/ "likebeta's")&nbsp;&nbsp;做出来的页面真心很赞
+- [Havee's Space](http://havee.me/ "Havee's Space")&nbsp;&nbsp;技术性很强
+- [pinghailinfeng'blog](https://jeffsui.github.io/ "pinghailinfeng'blog")&nbsp;&nbsp;凭海临风的博客git相关
+- [IIssNan's Notes](http://notes.iissnan.com/ "IIssNan's Notes")&nbsp;&nbsp;NexT主题作者
+- [平凡梦想](http://blog.rechar.net/ "毛毛的博客")&nbsp;&nbsp;毛毛的博客
 
 
 
@@ -24,9 +24,9 @@ comments: false
 
 ### A collection of links
 
-* [Coding.net](http://coding.net/ "Coding")&nbsp;&nbsp;国内速度一流的代码托管
-* [Github](http://github.com "Github")&nbsp;&nbsp;国外知名的代码托管
-* [廖雪峰Git教程](http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000 "廖雪峰Git教程")&nbsp;&nbsp;Git教程讲解的浅显易懂适合初学者
+- [Coding.net](http://coding.net/ "Coding")&nbsp;&nbsp;国内速度一流的代码托管
+- [Github](http://github.com "Github")&nbsp;&nbsp;国外知名的代码托管
+- [廖雪峰Git教程](http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000 "廖雪峰Git教程")&nbsp;&nbsp;Git教程讲解的浅显易懂适合初学者
 
 
 
@@ -34,6 +34,6 @@ comments: false
 
 #### 友情链接添加须知：
 
-* 必须为合法的、内容健康向上的网站；
-* 只接受文字链接，并写好网站介绍；
-* 友情连接是双方站点寻求共同发展、互助互利的方式；
+- 必须为合法的、内容健康向上的网站；
+- 只接受文字链接，并写好网站介绍；
+- 友情连接是双方站点寻求共同发展、互助互利的方式；
