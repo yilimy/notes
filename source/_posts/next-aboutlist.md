@@ -9,7 +9,7 @@ categories: 学习笔记
 解决about等页面无序列表不显示小圆圈问题
 在样式文件的`blog\themes\next\source\css_custom`文件夹下找到`custom.styl`文件
 
-<~--more-->
+<!--more-->
 
 加入：
 ```
