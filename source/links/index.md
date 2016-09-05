@@ -16,6 +16,7 @@ comments: false
 - [pinghailinfeng'blog](https://jeffsui.github.io/ "pinghailinfeng'blog") - 凭海临风的博客git相关
 - [IIssNan's Notes](http://notes.iissnan.com/ "IIssNan's Notes") - NexT主题作者
 - [平凡梦想](http://blog.rechar.net/ "毛毛的博客") - 毛毛的博客
+- [ARAO'S BLOG](http://www.arao.me/ "动动手指的博客") - hexo-NexT主题优化
 
 
 
