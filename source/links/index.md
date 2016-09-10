@@ -18,6 +18,7 @@ comments: false
 - [平凡梦想](http://blog.rechar.net/ "毛毛的博客") - 毛毛的博客
 - [ARAO'S BLOG](http://www.arao.me/ "动动手指的博客") - hexo-NexT主题优化
 - [程序员之家](http://ehlxr.me "世界那么大，在此安个家") - 程序员之家
+- [cyang's blog](http://cyang.tech/ "永远年轻，永远热泪盈眶") - cyang's blog
 
 
 
