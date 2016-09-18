@@ -78,7 +78,7 @@
 <!-- 页面点击小红心 -->
 <script type="text/javascript" src="/js/src/love.js"></script>
 <!-- 动感High起来 -->
-<link href="http://7u2ss1.com1.z0.glb.clouddn.com/harlem-shake-style.css" rel="stylesheet" type="text/css" />
+<link href="http://7u2ss1.com1.z0.glb.clouddn.com/harlem-shake-style.css" rel="stylesheet" type="text/css"/>
 
 </body>
 </html>
