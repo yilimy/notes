@@ -171,7 +171,7 @@
     var a = "mw-strobe_light";
 
     /* harlem-shake-style.css，替换成你的位置，也可以直接使用：//s3.amazonaws.com/moovweb-marketing/playground/harlem-shake-style.css */
-    var f = "//s3.amazonaws.com/moovweb-marketing/playground/harlem-shake-style.css";
+    var f = "//7u2ss1.com1.z0.glb.clouddn.com/harlem-shake-style.css";
     
     var l = "mw_added_css";
     var b = g();
