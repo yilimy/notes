@@ -93,8 +93,15 @@ deploy:
        github: git@github.com:aixiu/notes.git,gh-pages
   
 
+# feed设置
 feed:
   type: atom
   path: atom.xml
   limit: 20
   hub:
+
+# hexo sitemap网站地图
+sitemap:
+  path: sitemap.xml
+baidusitemap:
+  path: baidusitemap.xml
