@@ -18,7 +18,7 @@
 
 
     var songs = [
-                "//s3.amazonaws.com/moovweb-marketing/playground/harlem-shake.mp3",
+                "//7u2ss1.com1.z0.glb.clouddn.com/harlem-shake.mp3",
                 "......"
     ];
 
