@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://blog.ynxiu.com/about/index.html</loc>
+    
+    <lastmod>2016-12-04T14:01:30.667Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://blog.ynxiu.com/2016/next-aboutlist.html</loc>
     
     <lastmod>2016-12-04T13:34:33.051Z</lastmod>
@@ -12,13 +19,6 @@
     <loc>http://blog.ynxiu.com/links/index.html</loc>
     
     <lastmod>2016-10-07T01:27:46.696Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://blog.ynxiu.com/about/index.html</loc>
-    
-    <lastmod>2016-09-20T05:14:07.957Z</lastmod>
     
   </url>
   
