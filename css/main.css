@@ -1689,7 +1689,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #ffdf3c;
+  background: #bd4a01;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2862,7 +2862,7 @@ code {
 .highlight,
 pre {
   margin: 5px 0;
-  padding: 5px;
+  padding: 3px;
   border-radius: 3px;
 }
 .highlight,
