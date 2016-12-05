@@ -396,10 +396,10 @@
 
       
         
-          <h1 id="首页title优化"><a href="#首页title优化" class="headerlink" title="首页title优化"></a>首页title优化</h1><p>更改index.swig文件<code>(your-hexo-site\themes\next\layout)</code>;<br>将下面这段代码<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123;% block title %&#125; &#123;&#123; config.title &#125;&#125; &#123;% endblock %&#125;</span><br></pre></td></tr></table></figure></p>
-<p>改成<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123;% block title %&#125; &#123;&#123; config.title &#125;&#125; - &#123;&#123; theme.description &#125;&#125; &#123;% endblock %&#125;</span><br></pre></td></tr></table></figure></p>
+          <h1 id="首页title优化"><a href="#首页title优化" class="headerlink" title="首页title优化"></a>首页title优化</h1><p>更改index.swig文件<code>(your-hexo-site\themes\next\layout)</code>;<br>将下面这段代码<br><figure class="highlight django"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="xml"></span><span class="template-tag">&#123;% <span class="name"><span class="name">block</span></span> title %&#125;</span><span class="xml"> </span><span class="template-variable">&#123;&#123; config.title &#125;&#125;</span><span class="xml"> </span><span class="template-tag">&#123;% <span class="name"><span class="name">endblock</span></span> %&#125;</span><span class="xml"></span></span><br></pre></td></tr></table></figure></p>
+<p>改成<br><figure class="highlight django"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="xml"></span><span class="template-tag">&#123;% <span class="name"><span class="name">block</span></span> title %&#125;</span><span class="xml"> </span><span class="template-variable">&#123;&#123; config.title &#125;&#125;</span><span class="xml"> - </span><span class="template-variable">&#123;&#123; theme.description &#125;&#125;</span><span class="xml"> </span><span class="template-tag">&#123;% <span class="name"><span class="name">endblock</span></span> %&#125;</span><span class="xml"></span></span><br></pre></td></tr></table></figure></p>
 <p>这时候你的首页会更符合网站名称 - 网站描述这习惯。<br>进阶，做了<code>seo</code>优化，把关键词也显示在<code>title</code>标题里，可改成：    </p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123;% block title %&#125; &#123;&#123; theme.keywords &#125;&#125; - &#123;&#123; config.title &#125;&#125;&#123;&#123; theme.description &#125;&#125; &#123;% endblock %&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight django"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="xml"></span><span class="template-tag">&#123;% <span class="name"><span class="name">block</span></span> title %&#125;</span><span class="xml"> </span><span class="template-variable">&#123;&#123; theme.keywords &#125;&#125;</span><span class="xml"> - </span><span class="template-variable">&#123;&#123; config.title &#125;&#125;</span><span class="xml"></span><span class="template-variable">&#123;&#123; theme.description &#125;&#125;</span><span class="xml"> </span><span class="template-tag">&#123;% <span class="name"><span class="name">endblock</span></span> %&#125;</span><span class="xml"></span></span><br></pre></td></tr></table></figure>
 <p>让你的关键字出现在<code>title</code>标题里<br><strong>注意：</strong> <em>关键字出现在<code>title</code>标题里是有利于<code>seo</code>优化的，前提是你的目标关键词已经确定好。如果确定好的话，尽可能让它们在<code>title</code>标题尽量靠前，同时标题总字数注意控制在<code>80</code>个字符以内，切勿堆砌关键字。<code>title</code>的标点符号：关键词分割符号英文半角逗号<code>，_ | ;</code>品牌与关键词分割符号 <code>-</code></em></p>
           <!--noindex-->
           <div class="post-more-link text-center">
@@ -1374,10 +1374,6 @@
   </script>
 
   
-    
-      
-      <script src="/lib/ua-parser-js/dist/ua-parser.min.js?v=0.7.9"></script>
-      <script src="/js/src/hook-duoshuo.js?v=5.1.0"></script>
     
     
     <script src="/lib/ua-parser-js/dist/ua-parser.min.js?v=0.7.9"></script>

@@ -412,26 +412,26 @@ hexo博客的安装和使用本文不再讲述。见文章：用hexo建博客
 <p>hexo博客的安装和使用本文不再讲述。见文章：<a href="http://blog.ynxiu.com/2016/hexo-you-blog.html" title="用hexo建博客">用hexo建博客</a></p>
 <p>在coding和github上建立pages项目，按要求建立。不会的自行百度。</p>
 <h1 id="配置-config-yml"><a href="#配置-config-yml" class="headerlink" title="配置_config.yml"></a>配置_config.yml</h1><p>想要把博客同时部署到coding和github上，关键一步就是<code>_config.yml</code>配置。</p>
-<p>根据Hexo官方文档需要修改成下面的形式<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  message: [message]</span><br><span class="line">  repo:</span><br><span class="line">    github: &lt;repository url&gt;,[branch]</span><br><span class="line">    gitcafe: &lt;repository url&gt;,[branch]</span><br></pre></td></tr></table></figure></p>
+<p>根据Hexo官方文档需要修改成下面的形式<br><figure class="highlight dts"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="symbol">deploy:</span></span><br><span class="line"><span class="symbol">  type:</span> git</span><br><span class="line"><span class="symbol">  message:</span> [message]</span><br><span class="line"><span class="symbol">  repo:</span></span><br><span class="line"><span class="symbol">    github:</span> <span class="params">&lt;repository url&gt;</span>,[branch]</span><br><span class="line"><span class="symbol">    gitcafe:</span> <span class="params">&lt;repository url&gt;</span>,[branch]</span><br></pre></td></tr></table></figure></p>
 <a id="more"></a>
-<p>所以我的是这样：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repo: </span><br><span class="line">       coding: git@git.coding.net:xxx/xxx.git,master</span><br><span class="line">       github: git@github.com:xxx/xxx.github.io.git,master</span><br></pre></td></tr></table></figure></p>
+<p>所以我的是这样：<br><figure class="highlight less"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">deploy</span>:</span><br><span class="line">  <span class="attribute">type</span>: git</span><br><span class="line">  <span class="attribute">repo</span>: </span><br><span class="line">       <span class="attribute">coding</span>: git<span class="variable">@git</span>.coding.<span class="attribute">net</span>:xxx/xxx.git,master</span><br><span class="line">       <span class="attribute">github</span>: git<span class="variable">@github</span>.<span class="attribute">com</span>:xxx/xxx.github.io.git,master</span><br></pre></td></tr></table></figure></p>
 <blockquote>
 <p>我这边提交采用的SSH密钥，这个方法有个好处，提交的时候不用输入用户名和密码。如果你习惯用http的方式，只要将地址改成相应的http地址即可。</p>
 </blockquote>
-<h1 id="部署"><a href="#部署" class="headerlink" title="部署"></a>部署</h1><p>最后使用部署命令就能把博客同步到<code>coding</code>和<code>github</code>上面：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo g</span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure></p>
+<h1 id="部署"><a href="#部署" class="headerlink" title="部署"></a>部署</h1><p>最后使用部署命令就能把博客同步到<code>coding</code>和<code>github</code>上面：<br><figure class="highlight stata"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo <span class="keyword">g</span></span><br><span class="line">hexo <span class="built_in">d</span></span><br></pre></td></tr></table></figure></p>
 <blockquote>
 <p>以上只是把<code>hexo</code>生成的静态文件部署到<code>coding</code>和<code>github</code>的<code>master</code>分支上。稍等片刻就能用系统给的地址访问到你的博客。</p>
 </blockquote>
 <h1 id="源文件的备份。"><a href="#源文件的备份。" class="headerlink" title="源文件的备份。"></a>源文件的备份。</h1><blockquote>
 <p>如果以后换了工作环镜，电脑也更换了，要如何备份源文件呢。这里我使用了git的支分特性。</p>
 </blockquote>
-<p>在<code>hexo</code>本地客博根目录打开<code>git bash</code>使用：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git init</span><br></pre></td></tr></table></figure></p>
-<p>添加 <code>coding</code>和<code>github</code>远程仓库<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git remote add origin xxx/xxx.git    coding仓库地址</span><br><span class="line">git remote add github xxx/xxx.git    github仓库地址</span><br></pre></td></tr></table></figure></p>
+<p>在<code>hexo</code>本地客博根目录打开<code>git bash</code>使用：<br><figure class="highlight nginx"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">git</span> init</span><br></pre></td></tr></table></figure></p>
+<p>添加 <code>coding</code>和<code>github</code>远程仓库<br><figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git remote add origin xxx/xxx<span class="selector-class">.git</span>    coding仓库地址</span><br><span class="line">git remote add github xxx/xxx<span class="selector-class">.git</span>    github仓库地址</span><br></pre></td></tr></table></figure></p>
 <p>因为hexo博客生成时自带了.gitignore文件，无需担心不必要的文档被git管理。</p>
-<p>因为编译后的文件对应的是<code>coding和github</code>的<code>master</code>分支，所以我们把源文件<code>push</code>到其它分支如：<code>coding-pages</code>分支。然后执行:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git checkout -b coding-pages</span><br></pre></td></tr></table></figure></p>
+<p>因为编译后的文件对应的是<code>coding和github</code>的<code>master</code>分支，所以我们把源文件<code>push</code>到其它分支如：<code>coding-pages</code>分支。然后执行:<br><figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git checkout -<span class="selector-tag">b</span> coding-pages</span><br></pre></td></tr></table></figure></p>
 <p>这时当前分支为<code>coding-pages</code></p>
 <p>接着<code>git add -A</code> ， <code>git commit -m &quot;注释&quot;</code></p>
-<p>然后分别<code>Push</code>到<code>coding</code>和<code>github</code>的<code>coding-pages</code>分支上<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git push origin coding-pages</span><br><span class="line">git push github coding-pages</span><br></pre></td></tr></table></figure></p>
+<p>然后分别<code>Push</code>到<code>coding</code>和<code>github</code>的<code>coding-pages</code>分支上<br><figure class="highlight maxima"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git <span class="built_in">push</span> <span class="built_in">origin</span> coding-pages</span><br><span class="line">git <span class="built_in">push</span> github coding-pages</span><br></pre></td></tr></table></figure></p>
 <p>以上是我手动同步到<code>coding</code>和<code>github</code>的方法。</p>
 
       
@@ -846,10 +846,6 @@ hexo博客的安装和使用本文不再讲述。见文章：用hexo建博客
   </script>
 
   
-    
-      
-      <script src="/lib/ua-parser-js/dist/ua-parser.min.js?v=0.7.9"></script>
-      <script src="/js/src/hook-duoshuo.js?v=5.1.0"></script>
     
     
     <script src="/lib/ua-parser-js/dist/ua-parser.min.js?v=0.7.9"></script>

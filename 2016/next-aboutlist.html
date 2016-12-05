@@ -393,8 +393,8 @@
       
         <p><a href="https://github.com/iissnan/hexo-theme-next/issues/934" title="点我看方法！" target="_blank" rel="external">原文请看感谢@weeson大神提供的方法</a>。<br>不知道是什么原因，自定义页面列表都没有样式。很不方便。修改方法如下<br>解决about等页面无序列表不显示小圆圈问题<br>在样式文件的<code>blog\themes\next\source\css_custom</code>文件夹下找到<code>custom.styl</code>文件</p>
 <a id="more"></a>
-<p>加入：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">ul &#123;</span><br><span class="line">list-style-type: disc;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
-<p>以上为实心圆，如需要调整到和文章页面相同的空心圆，修改为：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">ul &#123;</span><br><span class="line">list-style-type: circle;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>加入：<br><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">ul</span> &#123;</span><br><span class="line"><span class="attribute">list-style-type</span>: disc;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>以上为实心圆，如需要调整到和文章页面相同的空心圆，修改为：<br><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">ul</span> &#123;</span><br><span class="line"><span class="attribute">list-style-type</span>: circle;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
 
       
     </div>
@@ -781,10 +781,6 @@
   </script>
 
   
-    
-      
-      <script src="/lib/ua-parser-js/dist/ua-parser.min.js?v=0.7.9"></script>
-      <script src="/js/src/hook-duoshuo.js?v=5.1.0"></script>
     
     
     <script src="/lib/ua-parser-js/dist/ua-parser.min.js?v=0.7.9"></script>
