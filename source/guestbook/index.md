@@ -10,4 +10,4 @@ type: "guestbook"
 </blockquote>
 
 > 最近访客
-<div class="ds-recent-visitors" data-num-items="28" data-avatar-size="40" id="ds-recent-visitors"></div>
+<div class="ds-recent-visitors" data-num-items="28" data-avatar-size="41" id="ds-recent-visitors"></div>
