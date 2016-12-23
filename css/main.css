@@ -189,7 +189,7 @@ body {
   font-size: 14px;
   line-height: 2;
   color: #555;
-  background: #fff;
+  background: #f5f7f9;
 }
 @media (max-width: 767px) {
   body {
@@ -1691,7 +1691,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #692ab0;
+  background: #03981d;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2074,6 +2074,17 @@ pre .javascript .function {
   background-color: #78ace9 !important;
   border-color: #4cae4c !important;
 }
+.cloud-tie-wrapper img {
+  display: inline-block;
+}
+.cloud-tie-wrapper .total-txt {
+  font-size: 1em !important;
+}
+.cloud-tie-join-count .join-count {
+  color: #555 !important;
+  font-size: inherit !important;
+  margin: 0 !important;
+}
 .post-spread {
   margin-top: 20px;
   text-align: center;
@@ -2449,9 +2460,6 @@ a.search-result {
 .page-post-detail .comments {
   overflow: hidden;
 }
-body {
-  background: #f5f7f9;
-}
 @media (min-width: 992px) {
   .full-image.full-image.full-image {
     max-width: none;
@@ -2481,6 +2489,8 @@ body {
   padding: 0;
   width: 240px;
   background: #fff;
+  box-shadow: initial;
+  border-radius: initial;
 }
 @media (min-width: 1600px) {
   .container .header-inner {
@@ -2491,12 +2501,14 @@ body {
   .header-inner {
     position: relative;
     width: auto;
+    border-radius: initial;
   }
 }
 @media (max-width: 767px) {
   .header-inner {
     position: relative;
     width: auto;
+    border-radius: initial;
   }
 }
 .main:before,
@@ -2537,11 +2549,14 @@ body {
   width: 810px;
   background: #fff;
   min-height: 700px;
+  box-shadow: initial;
+  border-radius: initial;
 }
 @media (min-width: 768px) and (max-width: 991px) {
   .content-wrap {
     width: 100%;
     padding: 20px;
+    border-radius: initial;
   }
 }
 @media (max-width: 767px) {
@@ -2549,6 +2564,7 @@ body {
     width: 100%;
     padding: 20px;
     min-height: auto;
+    border-radius: initial;
   }
 }
 .sidebar {
@@ -2556,7 +2572,7 @@ body {
   float: left;
   margin-top: 300px;
   width: 240px;
-  background: #fff;
+  background: #f5f7f9;
   box-shadow: none;
 }
 @media (min-width: 768px) and (max-width: 991px) {
@@ -2633,7 +2649,8 @@ body {
   color: #fff;
 }
 .site-subtitle {
-  margin: 0;
+  margin: 10px 10px 0;
+  font-family: monospace;
 }
 .site-search form {
   display: none;
@@ -2712,6 +2729,8 @@ body {
   width: 240px;
   color: #555;
   background: #fff;
+  box-shadow: initial;
+  border-radius: initial;
 }
 .sidebar-inner.affix {
   position: fixed;
