@@ -85,7 +85,7 @@
 <link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="git,hexo,命令,备份," />
+  <meta name="keywords" content="Hexo,next-theme,Bug," />
 
 
 
@@ -103,22 +103,16 @@
 
 
 
-<meta name="description" content="如果远程只有一个master分支,请你创建一个非master分支,然后推送到远程。同时也是备份一下master分支。
-12git branch the_master_backupgit push origin the_master_backup
-此时你查看远程分支应该有两个 master和the_master_backup设置默认的分支为 the_master_backup123git branc">
+<meta name="description" content="引子好久没写博客了，一时间发现作者更新了新版本，我就很自然的，拉取最新版本，然后合并自己本地的博客源码，解决了好几个文件的冲突。看似是解决好了，不料在我 hexo clean 、hexo g 操作时，出现了问题：">
 <meta property="og:type" content="article">
-<meta property="og:title" content="如何进行远程版本回退">
-<meta property="og:url" content="http://blog.ynxiu.com/2016/how-git-version-rollback.html">
+<meta property="og:title" content="hexo-nexo主题配置中的问题">
+<meta property="og:url" content="http://blog.ynxiu.com/2017/hexo-nexo-iss.html">
 <meta property="og:site_name" content="量子广告">
-<meta property="og:description" content="如果远程只有一个master分支,请你创建一个非master分支,然后推送到远程。同时也是备份一下master分支。
-12git branch the_master_backupgit push origin the_master_backup
-此时你查看远程分支应该有两个 master和the_master_backup设置默认的分支为 the_master_backup123git branc">
-<meta property="og:updated_time" content="2016-05-19T02:22:21.030Z">
+<meta property="og:description" content="引子好久没写博客了，一时间发现作者更新了新版本，我就很自然的，拉取最新版本，然后合并自己本地的博客源码，解决了好几个文件的冲突。看似是解决好了，不料在我 hexo clean 、hexo g 操作时，出现了问题：">
+<meta property="og:updated_time" content="2017-03-03T06:32:34.735Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="如何进行远程版本回退">
-<meta name="twitter:description" content="如果远程只有一个master分支,请你创建一个非master分支,然后推送到远程。同时也是备份一下master分支。
-12git branch the_master_backupgit push origin the_master_backup
-此时你查看远程分支应该有两个 master和the_master_backup设置默认的分支为 the_master_backup123git branc">
+<meta name="twitter:title" content="hexo-nexo主题配置中的问题">
+<meta name="twitter:description" content="引子好久没写博客了，一时间发现作者更新了新版本，我就很自然的，拉取最新版本，然后合并自己本地的博客源码，解决了好几个文件的冲突。看似是解决好了，不料在我 hexo clean 、hexo g 操作时，出现了问题：">
 
 
 
@@ -146,13 +140,13 @@
 
 
 
-  <link rel="canonical" href="http://blog.ynxiu.com/2016/how-git-version-rollback.html"/>
+  <link rel="canonical" href="http://blog.ynxiu.com/2017/hexo-nexo-iss.html"/>
 
 
 
 
 
-  <title> 如何进行远程版本回退 | 量子广告 </title>
+  <title> hexo-nexo主题配置中的问题 | 量子广告 </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -301,7 +295,7 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://blog.ynxiu.com/2016/how-git-version-rollback.html">
+    <link itemprop="mainEntityOfPage" href="http://blog.ynxiu.com/2017/hexo-nexo-iss.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Aixiu">
@@ -322,7 +316,7 @@
             
             
               
-                如何进行远程版本回退
+                hexo-nexo主题配置中的问题
               
             
           </h1>
@@ -337,8 +331,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2016-05-19T09:52:05+08:00">
-                2016-05-19
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-03-03T14:12:49+08:00">
+                2017-03-03
               </time>
             
 
@@ -348,28 +342,6 @@
           </span>
 
           
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/学习笔记/" itemprop="url" rel="index">
-                    <span itemprop="name">学习笔记</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
 
           
             
@@ -378,8 +350,8 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2016/how-git-version-rollback.html#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/how-git-version-rollback.html" itemprop="commentCount"></span>
+                <a href="/2017/hexo-nexo-iss.html#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2017/hexo-nexo-iss.html" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -387,7 +359,7 @@
 
           
           
-             <span id="/2016/how-git-version-rollback.html" class="leancloud_visitors" data-flag-title="如何进行远程版本回退">
+             <span id="/2017/hexo-nexo-iss.html" class="leancloud_visitors" data-flag-title="hexo-nexo主题配置中的问题">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -416,14 +388,12 @@
       
 
       
-        <p>如果远程只有一个master分支,请你创建一个非master分支,然后推送到远程。同时也是备份一下master分支。</p>
-<figure class="highlight armasm"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="symbol">git</span> <span class="keyword">branch </span>the_master_backup</span><br><span class="line"><span class="symbol">git</span> <span class="keyword">push </span>origin the_master_backup</span><br></pre></td></tr></table></figure>
-<p>此时你查看远程分支应该有两个 master和the_master_backup<br>设置默认的分支为 the_master_backup<br><figure class="highlight crmsh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git branch -D branch_name //删除本地<span class="literal">master</span>分支</span><br><span class="line"></span><br><span class="line">git push :<span class="keyword">master</span> <span class="title">//推送一个空分支,相当于删除远程master</span>分支</span><br></pre></td></tr></table></figure></p>
+        <h2 id="引子"><a href="#引子" class="headerlink" title="引子"></a>引子</h2><p>好久没写博客了，一时间发现作者更新了新版本，我就很自然的，拉取最新版本，然后合并自己本地的博客源码，解决了好几个文件的冲突。看似是解决好了，不料在我 <code>hexo clean</code> 、<code>hexo g</code> 操作时，出现了问题：</p>
 <a id="more"></a>
-<h1 id="删除远程分支"><a href="#删除远程分支" class="headerlink" title="删除远程分支"></a>删除远程分支</h1><p>如何删除远程 Master 分支,为什么要删除远程 master 分支?<a href="https://gitcafe.com/GitCafe/Help/wiki/%E5%A6%82%E4%BD%95%E5%88%A0%E9%99%A4-Master-%E5%88%86%E6%94%AF" target="_blank" rel="external">请看这里!</a><br>然后</p>
-<h1 id="操作步骤"><a href="#操作步骤" class="headerlink" title="操作步骤"></a>操作步骤</h1><p>然后你在the_master_backup分支上 回滚到你要回滚的commit_id,然后重建master分支并推送到远程,顺便删除the_master_backup分支(包括远程the_master_backup分支)。<br><figure class="highlight crmsh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">git checkout the_master_backup</span><br><span class="line"></span><br><span class="line">git reset --hard commit_id</span><br><span class="line"></span><br><span class="line">git branch <span class="keyword">master</span> <span class="title">//重新创建master</span>分支</span><br><span class="line"></span><br><span class="line">git push origin <span class="keyword">master</span> <span class="title">//重新推送master</span>分支</span><br><span class="line"></span><br><span class="line">git branch -D the_master_backup //删除本地the_master_backup分支</span><br><span class="line"></span><br><span class="line">git push origin :the_master_backup//删除远程the_master_backup分支</span><br></pre></td></tr></table></figure></p>
-<h1 id="总结过程"><a href="#总结过程" class="headerlink" title="总结过程"></a>总结过程</h1><figure class="highlight gauss"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">git checkout the_branch</span><br><span class="line"></span><br><span class="line">git pull</span><br><span class="line"></span><br><span class="line">git branch the_branch_backup <span class="comment">//备份一下这个分支当前的情况,如果你开始执行过，这一步可以省略。</span></span><br><span class="line"></span><br><span class="line">git reset --hard the_commit_id <span class="comment">//把the_branch本地回滚到the_commit_id</span></span><br><span class="line"></span><br><span class="line">git <span class="keyword">push</span> origin :the_branch <span class="comment">//删除远程 the_branch</span></span><br><span class="line"></span><br><span class="line">git <span class="keyword">push</span> origin the_branch <span class="comment">//用回滚后的本地分支重新建立远程分支</span></span><br><span class="line"></span><br><span class="line">git <span class="keyword">push</span> origin :the_branch_backup <span class="comment">//如果前面都成功了，删除这个备份分支</span></span><br></pre></td></tr></table></figure>
-<p>本文引用于<a href="https://jeffsui.github.io/2015/05/16/how-git-version-rollback/" target="_blank" rel="external">大海的文章</a></p>
+<figure class="highlight tex"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br></pre></td><td class="code"><pre><span class="line"><span class="formula">$ hexo g</span><br><span class="line">ERROR Script load failed: themes<span class="tag">\<span class="name">next</span></span><span class="tag">\<span class="name">scripts</span></span><span class="tag">\<span class="name">tags</span></span><span class="tag">\<span class="name">exturl</span></span>.js</span><br><span class="line">Error: Cannot find module 'hexo-util'</span><br><span class="line">    at Function.Module._resolveFilename (module.js:325:15)</span><br><span class="line">    at Function.Module._load (module.js:276:25)</span><br><span class="line">    at Module.require (module.js:353:17)</span><br><span class="line">    at require (D:<span class="tag">\<span class="name">myblog</span></span>-hexo<span class="tag">\<span class="name">node</span></span>_modules<span class="tag">\<span class="name">hexo</span></span><span class="tag">\<span class="name">lib</span></span><span class="tag">\<span class="name">hexo</span></span><span class="tag">\<span class="name">index</span></span>.js:213:21)</span><br><span class="line">    at D:<span class="tag">\<span class="name">myblog</span></span>-hexo<span class="tag">\<span class="name">themes</span></span><span class="tag">\<span class="name">next</span></span><span class="tag">\<span class="name">scripts</span></span><span class="tag">\<span class="name">tags</span></span><span class="tag">\<span class="name">exturl</span></span>.js:7:12</span><br><span class="line">    at D:<span class="tag">\<span class="name">myblog</span></span>-hexo<span class="tag">\<span class="name">node</span></span>_modules<span class="tag">\<span class="name">hexo</span></span><span class="tag">\<span class="name">lib</span></span><span class="tag">\<span class="name">hexo</span></span><span class="tag">\<span class="name">index</span></span>.js:229:12</span><br><span class="line">    at tryCatcher (D:<span class="tag">\<span class="name">myblog</span></span>-hexo<span class="tag">\<span class="name">node</span></span>_modules<span class="tag">\<span class="name">hexo</span></span><span class="tag">\<span class="name">node</span></span>_modules<span class="tag">\<span class="name">bluebird</span></span><span class="tag">\<span class="name">js</span></span><span class="tag">\<span class="name">rel</span></span></span><br><span class="line">ease<span class="tag">\<span class="name">util</span></span>.js:16:23)</span><br><span class="line">    at Promise._settlePromiseFromHandler (D:<span class="tag">\<span class="name">myblog</span></span>-hexo<span class="tag">\<span class="name">node</span></span>_modules<span class="tag">\<span class="name">hexo</span></span><span class="tag">\<span class="name">node</span></span>_</span><br><span class="line">modules<span class="tag">\<span class="name">bluebird</span></span><span class="tag">\<span class="name">js</span></span><span class="tag">\<span class="name">release</span></span><span class="tag">\<span class="name">promise</span></span>.js:502:31)</span><br><span class="line">    at Promise._settlePromise (D:<span class="tag">\<span class="name">myblog</span></span>-hexo<span class="tag">\<span class="name">node</span></span>_modules<span class="tag">\<span class="name">hexo</span></span><span class="tag">\<span class="name">node</span></span>_modules<span class="tag">\<span class="name">blu</span></span></span><br><span class="line">ebird<span class="tag">\<span class="name">js</span></span><span class="tag">\<span class="name">release</span></span><span class="tag">\<span class="name">promise</span></span>.js:559:18)</span><br><span class="line">    at Promise._settlePromise0 (D:<span class="tag">\<span class="name">myblog</span></span>-hexo<span class="tag">\<span class="name">node</span></span>_modules<span class="tag">\<span class="name">hexo</span></span><span class="tag">\<span class="name">node</span></span>_modules<span class="tag">\<span class="name">bl</span></span></span><br><span class="line">uebird<span class="tag">\<span class="name">js</span></span><span class="tag">\<span class="name">release</span></span><span class="tag">\<span class="name">promise</span></span>.js:604:10)</span><br><span class="line">    at Promise._settlePromises (D:<span class="tag">\<span class="name">myblog</span></span>-hexo<span class="tag">\<span class="name">node</span></span>_modules<span class="tag">\<span class="name">hexo</span></span><span class="tag">\<span class="name">node</span></span>_modules<span class="tag">\<span class="name">bl</span></span></span><br><span class="line">uebird<span class="tag">\<span class="name">js</span></span><span class="tag">\<span class="name">release</span></span><span class="tag">\<span class="name">promise</span></span>.js:683:18)</span><br><span class="line">    at Promise._fulfill (D:<span class="tag">\<span class="name">myblog</span></span>-hexo<span class="tag">\<span class="name">node</span></span>_modules<span class="tag">\<span class="name">hexo</span></span><span class="tag">\<span class="name">node</span></span>_modules<span class="tag">\<span class="name">bluebird</span></span><span class="tag">\<span class="name"></span><br><span class="line"></span></span>js<span class="tag">\<span class="name">release</span></span><span class="tag">\<span class="name">promise</span></span>.js:628:18)</span><br><span class="line">    at Promise._resolveCallback (D:<span class="tag">\<span class="name">myblog</span></span>-hexo<span class="tag">\<span class="name">node</span></span>_modules<span class="tag">\<span class="name">hexo</span></span><span class="tag">\<span class="name">node</span></span>_modules<span class="tag">\<span class="name">b</span></span></span><br><span class="line">luebird<span class="tag">\<span class="name">js</span></span><span class="tag">\<span class="name">release</span></span><span class="tag">\<span class="name">promise</span></span>.js:423:57)</span><br><span class="line">    at Promise._settlePromiseFromHandler (D:<span class="tag">\<span class="name">myblog</span></span>-hexo<span class="tag">\<span class="name">node</span></span>_modules<span class="tag">\<span class="name">hexo</span></span><span class="tag">\<span class="name">node</span></span>_</span><br><span class="line">modules<span class="tag">\<span class="name">bluebird</span></span><span class="tag">\<span class="name">js</span></span><span class="tag">\<span class="name">release</span></span><span class="tag">\<span class="name">promise</span></span>.js:514:17)</span><br><span class="line">    at Promise._settlePromise (D:<span class="tag">\<span class="name">myblog</span></span>-hexo<span class="tag">\<span class="name">node</span></span>_modules<span class="tag">\<span class="name">hexo</span></span><span class="tag">\<span class="name">node</span></span>_modules<span class="tag">\<span class="name">blu</span></span></span><br><span class="line">ebird<span class="tag">\<span class="name">js</span></span><span class="tag">\<span class="name">release</span></span><span class="tag">\<span class="name">promise</span></span>.js:559:18)</span><br><span class="line">    at Promise._settlePromise0 (D:<span class="tag">\<span class="name">myblog</span></span>-hexo<span class="tag">\<span class="name">node</span></span>_modules<span class="tag">\<span class="name">hexo</span></span><span class="tag">\<span class="name">node</span></span>_modules<span class="tag">\<span class="name">bl</span></span></span><br><span class="line">uebird<span class="tag">\<span class="name">js</span></span><span class="tag">\<span class="name">release</span></span><span class="tag">\<span class="name">promise</span></span>.js:604:10)</span><br><span class="line">    at Promise._settlePromises (D:<span class="tag">\<span class="name">myblog</span></span>-hexo<span class="tag">\<span class="name">node</span></span>_modules<span class="tag">\<span class="name">hexo</span></span><span class="tag">\<span class="name">node</span></span>_modules<span class="tag">\<span class="name">bl</span></span></span><br><span class="line">uebird<span class="tag">\<span class="name">js</span></span><span class="tag">\<span class="name">release</span></span><span class="tag">\<span class="name">promise</span></span>.js:683:18)</span><br><span class="line">    at Promise._fulfill (D:<span class="tag">\<span class="name">myblog</span></span>-hexo<span class="tag">\<span class="name">node</span></span>_modules<span class="tag">\<span class="name">hexo</span></span><span class="tag">\<span class="name">node</span></span>_modules<span class="tag">\<span class="name">bluebird</span></span><span class="tag">\<span class="name"></span><br><span class="line"></span></span>js<span class="tag">\<span class="name">release</span></span><span class="tag">\<span class="name">promise</span></span>.js:628:18)</span><br><span class="line">    at D:<span class="tag">\<span class="name">myblog</span></span>-hexo<span class="tag">\<span class="name">node</span></span>_modules<span class="tag">\<span class="name">hexo</span></span><span class="tag">\<span class="name">node</span></span>_modules<span class="tag">\<span class="name">bluebird</span></span><span class="tag">\<span class="name">js</span></span><span class="tag">\<span class="name">release</span></span><span class="tag">\<span class="name">nodebac</span></span></span><br><span class="line">k.js:42:21</span><br><span class="line">    at D:<span class="tag">\<span class="name">myblog</span></span>-hexo<span class="tag">\<span class="name">node</span></span>_modules<span class="tag">\<span class="name">hexo</span></span><span class="tag">\<span class="name">node</span></span>_modules<span class="tag">\<span class="name">hexo</span></span>-fs<span class="tag">\<span class="name">node</span></span>_modules<span class="tag">\<span class="name">gracef</span></span></span><br><span class="line">ul-fs<span class="tag">\<span class="name">graceful</span></span>-fs.js:78:16</span><br><span class="line">    at FSReqWrap.readFileAfterClose [as oncomplete] (fs.js:380:3)</span></span><br></pre></td></tr></table></figure>
+<p>虽然这些错误不影响正常使用，不过有点强迫症的我，是不能接受的。查了一下百度，并没有发现和我相同问题的，结果厚着脸到作者源码仓库 <a href="https://github.com/iissnan/hexo-theme-next" target="_blank" rel="external">iissnan/hexo-theme-next</a>,发布了一个ISS，<a href="https://github.com/iissnan/hexo-theme-next/issues/1480" target="_blank" rel="external">求解错误</a>，得到热心的同学解答，现把自己解决方法记录下来！</p>
+<h2 id="解决方案"><a href="#解决方案" class="headerlink" title="解决方案"></a>解决方案</h2><p>首先，错误列表反复提示 <code>Error: Cannot find module &#39;hexo-util&#39;</code> 这句，原来是加载 <code>hexo-util</code> 模块失败！<br>接下来，就安装此模块<br>命令行里打 <code>npm install -- save-dev hexo-util</code> 等待！、<br><figure class="highlight less"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">&gt; <span class="selector-tag">hexo-util</span>@<span class="selector-tag">0</span><span class="selector-class">.6</span><span class="selector-class">.0</span> <span class="selector-tag">postinstall</span> <span class="selector-tag">D</span>:\<span class="selector-tag">myblog-hexo</span>\<span class="selector-tag">node_modules</span>\<span class="selector-tag">hexo-util</span></span><br><span class="line">&gt; <span class="selector-tag">npm</span> <span class="selector-tag">run</span> <span class="selector-tag">build</span><span class="selector-pseudo">:highlight</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">&gt; <span class="selector-tag">hexo-util</span>@<span class="selector-tag">0</span><span class="selector-class">.6</span><span class="selector-class">.0</span> <span class="selector-tag">build</span><span class="selector-pseudo">:highlight</span> <span class="selector-tag">D</span>:\<span class="selector-tag">myblog-hexo</span>\<span class="selector-tag">node_modules</span>\<span class="selector-tag">hexo-util</span></span><br><span class="line">&gt; <span class="selector-tag">node</span> <span class="selector-tag">scripts</span>/<span class="selector-tag">build_highlight_alias</span><span class="selector-class">.js</span> &gt; <span class="selector-tag">highlight_alias</span><span class="selector-class">.json</span></span><br><span class="line"></span><br><span class="line"><span class="selector-tag">save-dev</span>@<span class="selector-tag">2</span><span class="selector-class">.0</span><span class="selector-class">.0</span> <span class="selector-tag">node_modules</span>\<span class="selector-tag">save-dev</span></span><br><span class="line"></span><br><span class="line"><span class="selector-tag">hexo-util</span>@<span class="selector-tag">0</span><span class="selector-class">.6</span><span class="selector-class">.0</span> <span class="selector-tag">node_modules</span>\<span class="selector-tag">hexo-util</span></span><br><span class="line">├── <span class="selector-tag">html-entities</span>@<span class="selector-tag">1</span><span class="selector-class">.2</span><span class="selector-class">.0</span></span><br><span class="line">├── <span class="selector-tag">striptags</span>@<span class="selector-tag">2</span><span class="selector-class">.2</span><span class="selector-class">.1</span></span><br><span class="line">├── <span class="selector-tag">bluebird</span>@<span class="selector-tag">3</span><span class="selector-class">.4</span><span class="selector-class">.7</span></span><br><span class="line">├── <span class="selector-tag">highlight</span><span class="selector-class">.js</span>@<span class="selector-tag">9</span><span class="selector-class">.9</span><span class="selector-class">.0</span></span><br><span class="line">├── <span class="selector-tag">cross-spawn</span>@<span class="selector-tag">4</span><span class="selector-class">.0</span><span class="selector-class">.2</span> (lru-cache<span class="variable">@4</span>.<span class="number">0.2</span>, which<span class="variable">@1</span>.<span class="number">2.12</span>)</span><br><span class="line">└── <span class="selector-tag">camel-case</span>@<span class="selector-tag">3</span><span class="selector-class">.0</span><span class="selector-class">.0</span> (upper-case<span class="variable">@1</span>.<span class="number">1.3</span>, no-case<span class="variable">@2</span>.<span class="number">3.1</span>)</span><br></pre></td></tr></table></figure></p>
+<p>显示为此，说明模块安装成功<br>再试 <code>hexo clean</code> 、<code>hexo g</code> 等操作，都正常了。<br>总体来说，一般这些错误，都是模块的问题，知道了原理，再慢慢排查，就应该能解决相应的问题！~</p>
 
       
     </div>
@@ -457,13 +427,11 @@
       
         <div class="post-tags">
           
-            <a href="/tags/git/" rel="tag"># git</a>
+            <a href="/tags/Hexo/" rel="tag"># Hexo</a>
           
-            <a href="/tags/hexo/" rel="tag"># hexo</a>
+            <a href="/tags/next-theme/" rel="tag"># next-theme</a>
           
-            <a href="/tags/命令/" rel="tag"># 命令</a>
-          
-            <a href="/tags/备份/" rel="tag"># 备份</a>
+            <a href="/tags/Bug/" rel="tag"># Bug</a>
           
         </div>
       
@@ -476,8 +444,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2016/hexo-github-and-coding.html" rel="next" title="将hexo博客同时托管到github和coding">
-                <i class="fa fa-chevron-left"></i> 将hexo博客同时托管到github和coding
+              <a href="/2016/hexo-next-theme-optimize.html" rel="next" title="Hexo+NexT主题配置备忘">
+                <i class="fa fa-chevron-left"></i> Hexo+NexT主题配置备忘
               </a>
             
           </div>
@@ -485,10 +453,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2016/duoshuo-fangke.html" rel="prev" title="NexT主题'留言'页面增加最近访客">
-                NexT主题'留言'页面增加最近访客 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -503,10 +467,10 @@
 
     <div class="post-spread">
       
-        <div class="ds-share flat" data-thread-key="2016/how-git-version-rollback.html"
-     data-title="如何进行远程版本回退"
+        <div class="ds-share flat" data-thread-key="2017/hexo-nexo-iss.html"
+     data-title="hexo-nexo主题配置中的问题"
      data-content=""
-     data-url="http://blog.ynxiu.com/2016/how-git-version-rollback.html">
+     data-url="http://blog.ynxiu.com/2017/hexo-nexo-iss.html">
   <div class="ds-share-inline">
     <ul  class="ds-share-icons-16">
 
@@ -533,8 +497,8 @@
           
   <div class="comments" id="comments">
     
-      <div class="ds-thread" data-thread-key="2016/how-git-version-rollback.html"
-           data-title="如何进行远程版本回退" data-url="http://blog.ynxiu.com/2016/how-git-version-rollback.html">
+      <div class="ds-thread" data-thread-key="2017/hexo-nexo-iss.html"
+           data-title="hexo-nexo主题配置中的问题" data-url="http://blog.ynxiu.com/2017/hexo-nexo-iss.html">
       </div>
     
   </div>
@@ -708,7 +672,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#删除远程分支"><span class="nav-number">1.</span> <span class="nav-text">删除远程分支</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#操作步骤"><span class="nav-number">2.</span> <span class="nav-text">操作步骤</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#总结过程"><span class="nav-number">3.</span> <span class="nav-text">总结过程</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#引子"><span class="nav-number">1.</span> <span class="nav-text">引子</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#解决方案"><span class="nav-number">2.</span> <span class="nav-text">解决方案</span></a></li></ol></div>
             
 
           </div>
