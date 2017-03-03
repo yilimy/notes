@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.ynxiu.com/"/>
-  <updated>2017-03-03T06:32:34.735Z</updated>
+  <updated>2017-03-03T07:14:45.129Z</updated>
   <id>http://blog.ynxiu.com/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="http://blog.ynxiu.com/2017/hexo-nexo-iss.html"/>
     <id>http://blog.ynxiu.com/2017/hexo-nexo-iss.html</id>
     <published>2017-03-03T06:12:49.000Z</published>
-    <updated>2017-03-03T06:32:34.735Z</updated>
+    <updated>2017-03-03T07:14:45.129Z</updated>
     
     <content type="html">&lt;h2 id=&quot;引子&quot;&gt;&lt;a href=&quot;#引子&quot; class=&quot;headerlink&quot; title=&quot;引子&quot;&gt;&lt;/a&gt;引子&lt;/h2&gt;&lt;p&gt;好久没写博客了，一时间发现作者更新了新版本，我就很自然的，拉取最新版本，然后合并自己本地的博客源码，解决了好几个文件的冲突。看似是解决好了，不料在我 &lt;code&gt;hexo clean&lt;/code&gt; 、&lt;code&gt;hexo g&lt;/code&gt; 操作时，出现了问题：&lt;/p&gt;
 &lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
@@ -35,6 +35,8 @@
       &lt;h2 id=&quot;引子&quot;&gt;&lt;a href=&quot;#引子&quot; class=&quot;headerlink&quot; title=&quot;引子&quot;&gt;&lt;/a&gt;引子&lt;/h2&gt;&lt;p&gt;好久没写博客了，一时间发现作者更新了新版本，我就很自然的，拉取最新版本，然后合并自己本地的博客源码，解决了好几个文件的冲突。看似是解决好了，不料在我 &lt;code&gt;hexo clean&lt;/code&gt; 、&lt;code&gt;hexo g&lt;/code&gt; 操作时，出现了问题：&lt;/p&gt;
     
     </summary>
+    
+      <category term="学习笔记" scheme="http://blog.ynxiu.com/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
     
     
       <category term="Hexo" scheme="http://blog.ynxiu.com/tags/Hexo/"/>
@@ -129,9 +131,9 @@
     
       <category term="Hexo" scheme="http://blog.ynxiu.com/tags/Hexo/"/>
     
-      <category term="Seo" scheme="http://blog.ynxiu.com/tags/Seo/"/>
-    
       <category term="next-theme" scheme="http://blog.ynxiu.com/tags/next-theme/"/>
+    
+      <category term="Seo" scheme="http://blog.ynxiu.com/tags/Seo/"/>
     
   </entry>
   
@@ -190,9 +192,9 @@
     
       <category term="Hexo" scheme="http://blog.ynxiu.com/tags/Hexo/"/>
     
-      <category term="Google" scheme="http://blog.ynxiu.com/tags/Google/"/>
-    
       <category term="Seo" scheme="http://blog.ynxiu.com/tags/Seo/"/>
+    
+      <category term="Google" scheme="http://blog.ynxiu.com/tags/Google/"/>
     
   </entry>
   

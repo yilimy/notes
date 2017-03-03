@@ -5,7 +5,7 @@
     
   <url>
     <loc>http://blog.ynxiu.com/2017/hexo-nexo-iss.html</loc>
-    <lastmod>2017-03-03T06:32:34.735Z</lastmod>
+    <lastmod>2017-03-03T07:14:45.129Z</lastmod>
     <data>
         <display>
         <title>hexo-nexo主题配置中的问题</title>
@@ -19,6 +19,9 @@
          
          
            
+             
+              <breadCrumb title="学习笔记" url="http://blog.ynxiu.com/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+          
         </display>
     </data>
     </url>
@@ -34,9 +37,9 @@
         
         <tag>Hexo</tag>
          
-        <tag>Seo</tag>
-         
         <tag>next-theme</tag>
+         
+        <tag>Seo</tag>
          
          
            
@@ -85,9 +88,9 @@
         
         <tag>Hexo</tag>
          
-        <tag>Google</tag>
-         
         <tag>Seo</tag>
+         
+        <tag>Google</tag>
          
          
            
