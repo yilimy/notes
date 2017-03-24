@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://blog.ynxiu.com/about/index.html</loc>
+    
+    <lastmod>2017-03-24T09:55:17.214Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://blog.ynxiu.com/2017/hexo-nexo-iss.html</loc>
     
     <lastmod>2017-03-03T07:14:45.129Z</lastmod>
@@ -19,13 +26,6 @@
     <loc>http://blog.ynxiu.com/guestbook/index.html</loc>
     
     <lastmod>2016-12-08T04:17:28.921Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://blog.ynxiu.com/about/index.html</loc>
-    
-    <lastmod>2016-12-04T14:01:30.667Z</lastmod>
     
   </url>
   
