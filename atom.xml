@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.ynxiu.com/"/>
-  <updated>2017-03-03T07:14:45.129Z</updated>
+  <updated>2017-04-19T02:19:36.216Z</updated>
   <id>http://blog.ynxiu.com/</id>
   
   <author>
@@ -14,6 +14,33 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Git忽略规则及.gitignore规则不生效的解决办法</title>
+    <link href="http://blog.ynxiu.com/2017/gitignore-Effective-rules.html"/>
+    <id>http://blog.ynxiu.com/2017/gitignore-Effective-rules.html</id>
+    <published>2017-04-19T02:16:03.000Z</published>
+    <updated>2017-04-19T02:19:36.216Z</updated>
+    
+    <content type="html">&lt;h2 id=&quot;引子&quot;&gt;&lt;a href=&quot;#引子&quot; class=&quot;headerlink&quot; title=&quot;引子&quot;&gt;&lt;/a&gt;引子&lt;/h2&gt;&lt;p&gt;在git中如果想忽略掉某个文件，不让这个文件提交到版本库中，可以使用修改根目录中 .gitignore 文件的方法（如无，则需自己手工建立此文件）。这个文件每一行保存了一个匹配的规则例如：&lt;br&gt;&lt;figure class=&quot;highlight crystal&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;# 此为注释 – 将被 Git 忽略&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt; &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;*.a       &lt;span class=&quot;comment&quot;&gt;# 忽略所有 .a 结尾的文件&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;!&lt;span class=&quot;class&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;lib&lt;/span&gt;.&lt;span class=&quot;title&quot;&gt;a&lt;/span&gt;    &lt;span class=&quot;comment&quot;&gt;# 但 lib.a 除外&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;/TODO     &lt;span class=&quot;comment&quot;&gt;# 仅仅忽略项目根目录下的 TODO 文件，不包括 subdir/TODO&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;build/    &lt;span class=&quot;comment&quot;&gt;# 忽略 build/ 目录下的所有文件&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;doc/*.txt &lt;span class=&quot;comment&quot;&gt;# 会忽略 doc/notes.txt 但不包括 doc/server/arch.txt&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+&lt;h2 id=&quot;处理方法&quot;&gt;&lt;a href=&quot;#处理方法&quot; class=&quot;headerlink&quot; title=&quot;处理方法&quot;&gt;&lt;/a&gt;处理方法&lt;/h2&gt;&lt;p&gt;规则很简单，不做过多解释，但是有时候在项目开发过程中，突然心血来潮想把某些目录或文件加入忽略规则，按照上述方法定义后发现并未生效，原因是.gitignore只能忽略那些原来没有被track的文件，如果某些文件已经被纳入了版本管理中，则修改.gitignore是无效的。那么解决方法就是先把本地缓存删除（改变成未track状态），然后再提交：&lt;br&gt;&lt;figure class=&quot;highlight livecodeserver&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;git rm -r &lt;span class=&quot;comment&quot;&gt;--cached .&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;git &lt;span class=&quot;built_in&quot;&gt;add&lt;/span&gt; .&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;git commit -m &lt;span class=&quot;string&quot;&gt;&#39;update .gitignore&#39;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;引子&quot;&gt;&lt;a href=&quot;#引子&quot; class=&quot;headerlink&quot; title=&quot;引子&quot;&gt;&lt;/a&gt;引子&lt;/h2&gt;&lt;p&gt;在git中如果想忽略掉某个文件，不让这个文件提交到版本库中，可以使用修改根目录中 .gitignore 文件的方法（如无，则需自己手工建立此文件）。这个文件每一行保存了一个匹配的规则例如：&lt;br&gt;&lt;figure class=&quot;highlight crystal&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;# 此为注释 – 将被 Git 忽略&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt; &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;*.a       &lt;span class=&quot;comment&quot;&gt;# 忽略所有 .a 结尾的文件&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;!&lt;span class=&quot;class&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;lib&lt;/span&gt;.&lt;span class=&quot;title&quot;&gt;a&lt;/span&gt;    &lt;span class=&quot;comment&quot;&gt;# 但 lib.a 除外&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;/TODO     &lt;span class=&quot;comment&quot;&gt;# 仅仅忽略项目根目录下的 TODO 文件，不包括 subdir/TODO&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;build/    &lt;span class=&quot;comment&quot;&gt;# 忽略 build/ 目录下的所有文件&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;doc/*.txt &lt;span class=&quot;comment&quot;&gt;# 会忽略 doc/notes.txt 但不包括 doc/server/arch.txt&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="学习笔记" scheme="http://blog.ynxiu.com/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    
+    
+      <category term="git" scheme="http://blog.ynxiu.com/tags/git/"/>
+    
+      <category term="语法" scheme="http://blog.ynxiu.com/tags/%E8%AF%AD%E6%B3%95/"/>
+    
+  </entry>
   
   <entry>
     <title>hexo-nexo主题配置中的问题</title>
@@ -441,13 +468,13 @@
       <category term="学习笔记" scheme="http://blog.ynxiu.com/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
     
     
-      <category term="hexo" scheme="http://blog.ynxiu.com/tags/hexo/"/>
-    
       <category term="git" scheme="http://blog.ynxiu.com/tags/git/"/>
     
-      <category term="命令" scheme="http://blog.ynxiu.com/tags/%E5%91%BD%E4%BB%A4/"/>
+      <category term="hexo" scheme="http://blog.ynxiu.com/tags/hexo/"/>
     
       <category term="备份" scheme="http://blog.ynxiu.com/tags/%E5%A4%87%E4%BB%BD/"/>
+    
+      <category term="命令" scheme="http://blog.ynxiu.com/tags/%E5%91%BD%E4%BB%A4/"/>
     
   </entry>
   
@@ -502,13 +529,13 @@
       <category term="学习笔记" scheme="http://blog.ynxiu.com/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
     
     
-      <category term="hexo" scheme="http://blog.ynxiu.com/tags/hexo/"/>
-    
       <category term="git" scheme="http://blog.ynxiu.com/tags/git/"/>
     
-      <category term="命令" scheme="http://blog.ynxiu.com/tags/%E5%91%BD%E4%BB%A4/"/>
+      <category term="hexo" scheme="http://blog.ynxiu.com/tags/hexo/"/>
     
       <category term="备份" scheme="http://blog.ynxiu.com/tags/%E5%A4%87%E4%BB%BD/"/>
+    
+      <category term="命令" scheme="http://blog.ynxiu.com/tags/%E5%91%BD%E4%BB%A4/"/>
     
   </entry>
   
@@ -623,13 +650,13 @@
       <category term="学习笔记" scheme="http://blog.ynxiu.com/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
     
     
-      <category term="hexo" scheme="http://blog.ynxiu.com/tags/hexo/"/>
-    
       <category term="git" scheme="http://blog.ynxiu.com/tags/git/"/>
     
-      <category term="命令" scheme="http://blog.ynxiu.com/tags/%E5%91%BD%E4%BB%A4/"/>
+      <category term="hexo" scheme="http://blog.ynxiu.com/tags/hexo/"/>
     
       <category term="备份" scheme="http://blog.ynxiu.com/tags/%E5%A4%87%E4%BB%BD/"/>
+    
+      <category term="命令" scheme="http://blog.ynxiu.com/tags/%E5%91%BD%E4%BB%A4/"/>
     
   </entry>
   
@@ -675,13 +702,13 @@
       <category term="学习笔记" scheme="http://blog.ynxiu.com/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
     
     
-      <category term="hexo" scheme="http://blog.ynxiu.com/tags/hexo/"/>
-    
       <category term="git" scheme="http://blog.ynxiu.com/tags/git/"/>
     
-      <category term="命令" scheme="http://blog.ynxiu.com/tags/%E5%91%BD%E4%BB%A4/"/>
+      <category term="hexo" scheme="http://blog.ynxiu.com/tags/hexo/"/>
     
       <category term="备份" scheme="http://blog.ynxiu.com/tags/%E5%A4%87%E4%BB%BD/"/>
+    
+      <category term="命令" scheme="http://blog.ynxiu.com/tags/%E5%91%BD%E4%BB%A4/"/>
     
   </entry>
   
