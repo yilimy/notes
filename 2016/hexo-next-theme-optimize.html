@@ -88,7 +88,7 @@
 <link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Hexo,Seo,next-theme," />
+  <meta name="keywords" content="Hexo,next-theme,Seo," />
 
 
 
@@ -116,7 +116,7 @@ NexT主题安装使用本地环境自行安装 git 和 Node.js 不会的可百�
 <meta property="og:description" content="2016年即将过去，在此整理一下hexo博客自己的改动，生命不息，折腾不体。我喜欢折腾，更享受用hexo写博。
 NexT主题安装使用本地环境自行安装 git 和 Node.js 不会的可百度，安装方法一堆。
 安装HexoGit 和 Node.js 都安装好后,首先创建一个用于存放博客文件的文件夹，如 blog，然后进入 blog 文件夹，下面开始安装并使用 Hexo。右键选择 Git Bash H">
-<meta property="og:updated_time" content="2016-12-15T01:24:25.445Z">
+<meta property="og:updated_time" content="2017-04-21T06:10:11.814Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo+NexT主题配置备忘">
 <meta name="twitter:description" content="2016年即将过去，在此整理一下hexo博客自己的改动，生命不息，折腾不体。我喜欢折腾，更享受用hexo写博。
@@ -454,9 +454,10 @@ NexT主题安装使用本地环境自行安装 git 和 Node.js 不会的可百�
 <h2 id="修改-post-swig-文件"><a href="#修改-post-swig-文件" class="headerlink" title="修改 post.swig 文件"></a>修改 post.swig 文件</h2><p>在 <code>\themes\next\layout\_macro\post.swig</code> 中， <code>post-body</code> 之后， <code>post-footer</code> 之前添加如下代码（post-footer之前两个DIV）：<br><figure class="highlight django"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="xml"><span class="tag">&lt;<span class="name">div</span>&gt;</span></span><br><span class="line">  </span><span class="template-tag">&#123;% <span class="name"><span class="name">if</span></span> not is_index %&#125;</span><span class="xml"></span><br><span class="line">    </span><span class="template-tag">&#123;% <span class="name"><span class="name">include</span></span> 'passage-end-tag.swig' %&#125;</span><span class="xml"></span><br><span class="line">  </span><span class="template-tag">&#123;% <span class="name"><span class="name">endif</span></span> %&#125;</span><span class="xml"></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span></span><br></pre></td></tr></table></figure></p>
 <h2 id="在主题配置文件中添加字段"><a href="#在主题配置文件中添加字段" class="headerlink" title="在主题配置文件中添加字段"></a>在主题配置文件中添加字段</h2><p>在<strong>主题配置文件</strong> <code>_config.yml</code> 中添加以下字段开启此功能：<br><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 文章末尾添加“本文结束”标记</span></span><br><span class="line"><span class="attr">passage_end_tag:</span></span><br><span class="line"><span class="attr">  enabled:</span> <span class="literal">true</span></span><br></pre></td></tr></table></figure></p>
 <p>完成以上设置之后，在每篇文章之后都会添加“本文结束”标记。</p>
-<h1 id="增加HIGH一下功能"><a href="#增加HIGH一下功能" class="headerlink" title="增加HIGH一下功能"></a>增加HIGH一下功能</h1><p>在 <code>themes\next\layout\_macro</code> 目录下增加 <code>high.swig</code> 文件，我已改为歌曲循环和多次点击不重复！<br>地址为<br><figure class="highlight dts"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="symbol">http:</span><span class="comment">//7u2ss1.com1.z0.glb.clouddn.com/high-xunhuan.swig</span></span><br></pre></td></tr></table></figure></p>
-<p>打开\themes\next\layout_macro\sidebar.swig文件，打开，在<br><figure class="highlight django"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="xml"><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"</span></span></span><span class="template-variable">&#123;&#123; url_for(theme.rss) &#125;&#125;</span><span class="xml"><span class="tag"><span class="string">"</span> <span class="attr">target</span>=<span class="string">"_blank"</span> <span class="attr">rel</span>=<span class="string">"alternate"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">"fa fa-rss"</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span></span><br><span class="line">    RSS</span><br><span class="line"><span class="tag">&lt;/<span class="name">a</span>&gt;</span></span></span><br></pre></td></tr></table></figure></p>
-<p>后边加入：<br><figure class="highlight django"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="xml"></span><span class="template-tag">&#123;% <span class="name"><span class="name">if</span></span> theme.highqilai.enabled %&#125;</span><span class="xml"></span><br><span class="line"></span><span class="template-tag">&#123;% <span class="name"><span class="name">include</span></span> 'high.swig' %&#125;</span><span class="xml"></span><br><span class="line"></span><span class="template-tag">&#123;% <span class="name"><span class="name">endif</span></span> %&#125;</span><span class="xml"></span></span><br></pre></td></tr></table></figure></p>
+<h1 id="增加HIGH一下功能"><a href="#增加HIGH一下功能" class="headerlink" title="增加HIGH一下功能"></a>增加HIGH一下功能</h1><p>在 <code>themes\next\layout\_macro</code> 目录下增加 <code>high.swig</code> 文件，我已改为歌曲循环和多次点击不重复！<br>地址为:<br><figure class="highlight dts"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="symbol">http:</span><span class="comment">//7u2ss1.com1.z0.glb.clouddn.com/high-xunhuan.swig</span></span><br></pre></td></tr></table></figure></p>
+<p>打开这个地址，复制全部内容，在你本地新建<code>high.swig</code> 文件。<br>打开\themes\next\layout\_macro\sidebar.swig文件，打开，在<br><figure class="highlight django"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="xml"><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"</span></span></span><span class="template-variable">&#123;&#123; url_for(theme.rss) &#125;&#125;</span><span class="xml"><span class="tag"><span class="string">"</span> <span class="attr">target</span>=<span class="string">"_blank"</span> <span class="attr">rel</span>=<span class="string">"alternate"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">"fa fa-rss"</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span></span><br><span class="line">    RSS</span><br><span class="line"><span class="tag">&lt;/<span class="name">a</span>&gt;</span></span></span><br></pre></td></tr></table></figure></p>
+<p>后边加入：<br><figure class="highlight django"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="xml"></span><span class="template-tag">&#123;% <span class="name"><span class="name">include</span></span> 'high.swig' %&#125;</span><span class="xml"></span></span><br></pre></td></tr></table></figure></p>
+<p>如：<br><figure class="highlight django"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="xml"></span><span class="template-tag">&#123;% <span class="name"><span class="name">if</span></span> theme.rss %&#125;</span><span class="xml"></span><br><span class="line">          <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"feed-link motion-element"</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"</span></span></span><span class="template-variable">&#123;&#123; url_for(theme.rss) &#125;&#125;</span><span class="xml"><span class="tag"><span class="string">"</span> <span class="attr">rel</span>=<span class="string">"alternate"</span>&gt;</span></span><br><span class="line">              <span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">"fa fa-rss"</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span></span><br><span class="line">              RSS</span><br><span class="line">            <span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br><span class="line">              </span><span class="template-tag">&#123;% <span class="name"><span class="name">include</span></span> 'high.swig' %&#125;</span><span class="xml"></span><br><span class="line">          <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">        </span><span class="template-tag">&#123;% <span class="name"><span class="name">endif</span></span> %&#125;</span><span class="xml"></span></span><br></pre></td></tr></table></figure></p>
 <p>接着在主题配置文件 <code>_config.yml</code> ，加入：<br><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">highqilai:</span> </span><br><span class="line"><span class="attr">  enabled:</span> <span class="literal">true</span></span><br></pre></td></tr></table></figure></p>
 <p>然后打开自定义CSS： <code>\themes\next\source\css\_custom\custom.styl</code> 加入<br><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.feed-link</span> <span class="selector-tag">a</span>&#123;<span class="attribute">display</span>: inline-block;&#125;</span><br></pre></td></tr></table></figure></p>
 <p>保存，<code>hexo clean</code> ， <code>hexo g</code>  , <code>hexo s</code> 查看效果！<br>主页 <code>High</code> 起来，摇动。改动方法！<br><code>themes\next\layout\_layout.swig</code><br>前添加：<br><figure class="highlight fsharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;link href=<span class="string">"http://7u2ss1.com1.z0.glb.clouddn.com/harlem-shake-style.css"</span> rel=<span class="string">"stylesheet"</span> <span class="class"><span class="keyword">type</span></span>=<span class="string">"text/css"</span> /&gt;</span><br></pre></td></tr></table></figure></p>
@@ -536,9 +537,9 @@ NexT主题安装使用本地环境自行安装 git 和 Node.js 不会的可百�
           
             <a href="/tags/Hexo/" rel="tag"># Hexo</a>
           
-            <a href="/tags/Seo/" rel="tag"># Seo</a>
-          
             <a href="/tags/next-theme/" rel="tag"># next-theme</a>
+          
+            <a href="/tags/Seo/" rel="tag"># Seo</a>
           
         </div>
       
@@ -694,7 +695,69 @@ NexT主题安装使用本地环境自行安装 git 和 Node.js 不会的可百�
               <i class="fa fa-rss"></i>
               RSS
             </a>
-              
+                <a title="收藏到书签，偶尔High一下^_^" rel="alternate" class="mw-harlem_shake_slow wobble shake" href='javascript:(
+    /*
+     * Copyright (C) 2015 Rocko (rocko.xyz) <rocko.zxp@gmail.com>
+     *
+     * Licensed under the Apache License, Version 2.0 (the "License");
+     * you may not use this file except in compliance with the License.
+     * You may obtain a copy of the License at
+     *
+     *      http://www.apache.org/licenses/LICENSE-2.0
+     *
+     * Unless required by applicable law or agreed to in writing, software
+     * distributed under the License is distributed on an "AS IS" BASIS,
+     * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     * See the License for the specific language governing permissions and
+     * limitations under the License.
+     */
+
+    function go() {
+
+
+      var songs = [
+          "http://7u2ss1.com1.z0.glb.clouddn.com/%E9%AB%98%E6%A2%A8%E5%BA%B7%E6%B2%BB%20-%20%E5%AD%A4%E7%8B%AC.mp3", 
+          "http://7u2ss1.com1.z0.glb.clouddn.com/Enya%20-%20Only%20Time.mp3",
+          "http://7u2ss1.com1.z0.glb.clouddn.com/Enya%20-%20May%20It%20Be.mp3",        
+          "......"
+      ];
+ 
+      function S() {
+          var e = document.getElementById("audio_element_id");
+          if(e != null){
+              var index = parseInt(e.getAttribute("curSongIndex"));
+              if(index > songs.length - 2) {
+                  index = 0;
+              } else {
+                  index++;
+              }
+              e.setAttribute("curSongIndex", index);
+          }
+          e.src = i;
+          e.play()
+      }
+      function initAudioEle() {
+          var e = document.getElementById("audio_element_id");
+          if(e === null){
+            e = document.createElement("audio");
+            e.setAttribute("curSongIndex", 0);
+            e.id = "audio_element_id";
+            e.loop = false;
+            e.bgcolor = 0;
+            e.innerHTML = " <p>If you are reading this, it is because your browser does not support the audio element. We recommend that you get a new browser.</p> <p>";
+            document.body.appendChild(e);
+            e.addEventListener("ended", function() {
+              go();
+            }, true);
+          }        
+      }
+    
+      initAudioEle();
+      var curSongIndex = parseInt(document.getElementById("audio_element_id").getAttribute("curSongIndex"));
+      var i = songs[curSongIndex];
+      S();
+    })()'>
+    <i class="fa fa-music"></i> 听音乐</a>
           </div>
         
 

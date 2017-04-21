@@ -4,6 +4,30 @@
 
     
   <url>
+    <loc>http://blog.ynxiu.com/2016/hexo-next-theme-optimize.html</loc>
+    <lastmod>2017-04-21T06:10:11.814Z</lastmod>
+    <data>
+        <display>
+        <title>Hexo+NexT主题配置备忘</title>
+        <pubTime>2016-12-14T03:49:33.000Z</pubTime>
+        
+        <tag>Hexo</tag>
+         
+        <tag>next-theme</tag>
+         
+        <tag>Seo</tag>
+         
+         
+           
+             
+              <breadCrumb title="学习笔记" url="http://blog.ynxiu.com/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://blog.ynxiu.com/2017/gitignore-Effective-rules.html</loc>
     <lastmod>2017-04-19T02:19:36.216Z</lastmod>
     <data>
@@ -39,30 +63,6 @@
         <tag>next-theme</tag>
          
         <tag>Bug</tag>
-         
-         
-           
-             
-              <breadCrumb title="学习笔记" url="http://blog.ynxiu.com/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://blog.ynxiu.com/2016/hexo-next-theme-optimize.html</loc>
-    <lastmod>2016-12-15T01:24:25.445Z</lastmod>
-    <data>
-        <display>
-        <title>Hexo+NexT主题配置备忘</title>
-        <pubTime>2016-12-14T03:49:33.000Z</pubTime>
-        
-        <tag>Hexo</tag>
-         
-        <tag>Seo</tag>
-         
-        <tag>next-theme</tag>
          
          
            
@@ -110,9 +110,9 @@
         
         <tag>Hexo</tag>
          
-        <tag>Google</tag>
-         
         <tag>Seo</tag>
+         
+        <tag>Google</tag>
          
          
            
@@ -226,9 +226,9 @@
          
         <tag>hexo</tag>
          
-        <tag>备份</tag>
-         
         <tag>命令</tag>
+         
+        <tag>备份</tag>
          
          
            
@@ -252,9 +252,9 @@
          
         <tag>hexo</tag>
          
-        <tag>备份</tag>
-         
         <tag>命令</tag>
+         
+        <tag>备份</tag>
          
          
            
@@ -278,9 +278,9 @@
          
         <tag>hexo</tag>
          
-        <tag>备份</tag>
-         
         <tag>命令</tag>
+         
+        <tag>备份</tag>
          
          
            
@@ -352,9 +352,9 @@
          
         <tag>hexo</tag>
          
-        <tag>备份</tag>
-         
         <tag>命令</tag>
+         
+        <tag>备份</tag>
          
          
            
