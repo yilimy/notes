@@ -1243,6 +1243,7 @@ pre .javascript .function {
 }
 .posts-collapse .collection-title small {
   color: #bbb;
+  margin-left: 5px;
 }
 .posts-collapse .collection-title::before {
   content: " ";
@@ -1712,7 +1713,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #6b4e65;
+  background: #617e8e;
 }
 .links-of-blogroll {
   font-size: 13px;
