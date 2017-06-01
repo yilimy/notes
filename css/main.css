@@ -1418,26 +1418,6 @@ pre .javascript .function {
     display: none;
   }
 }
-.social-like {
-  font-size: 14px;
-  height: 20px;
-  text-align: center;
-  border-top: 1px solid #eee;
-  padding-top: 9px;
-  margin-top: 45px;
-  display: flex;
-  justify-content: center;
-}
-.vk_like {
-  width: 85px;
-  height: 21px;
-  padding-top: 7px;
-  align-self: center;
-}
-.fb_like {
-  height: 30px;
-  align-self: center;
-}
 .post-button {
   margin-top: 50px;
 }
@@ -1711,7 +1691,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #24cde4;
+  background: #0b5745;
 }
 .links-of-blogroll {
   font-size: 13px;
