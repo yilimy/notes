@@ -741,6 +741,7 @@ pre .javascript .function {
 .note h6 {
   margin-top: 0;
   margin-bottom: 5px;
+  padding-top: 0 !important;
 }
 .note p:last-child {
   margin-bottom: 0;
@@ -1691,7 +1692,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #3dff20;
+  background: #ff8b6a;
 }
 .links-of-blogroll {
   font-size: 13px;
