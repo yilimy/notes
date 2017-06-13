@@ -185,10 +185,6 @@ diff的三种格式由于历史原因，diff有三种格式：
 
 
   <title>如何看明白diff | 量子广告</title>
-</head>
-
-<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
-
   
 
 
@@ -204,6 +200,9 @@ diff的三种格式由于历史原因，diff有三种格式：
 
 
 
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
 
   
   
@@ -968,7 +967,7 @@ diff的三种格式由于历史原因，diff有三种格式：
     var search_path = "search.xml";
     if (search_path.length === 0) {
       search_path = "search.xml";
-    } else if (search_path.endsWith("json")) {
+    } else if (/json$/i.test(search_path)) {
       isXml = false;
     }
     var path = "/" + search_path;

@@ -99,7 +99,7 @@
 <link href="/css/main.css?v=5.1.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="git,hexo,命令,备份," />
+  <meta name="keywords" content="git,hexo,备份,命令," />
 
 
 
@@ -176,10 +176,6 @@ hexo博客的安装和使用本文不再讲述。见文章：用hexo建博客
 
 
   <title>将hexo博客同时托管到github和coding | 量子广告</title>
-</head>
-
-<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
-
   
 
 
@@ -195,6 +191,9 @@ hexo博客的安装和使用本文不再讲述。见文章：用hexo建博客
 
 
 
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
 
   
   
@@ -541,9 +540,9 @@ hexo博客的安装和使用本文不再讲述。见文章：用hexo建博客
           
             <a href="/tags/hexo/" rel="tag"># hexo</a>
           
-            <a href="/tags/命令/" rel="tag"># 命令</a>
-          
             <a href="/tags/备份/" rel="tag"># 备份</a>
+          
+            <a href="/tags/命令/" rel="tag"># 命令</a>
           
         </div>
       
@@ -950,7 +949,7 @@ hexo博客的安装和使用本文不再讲述。见文章：用hexo建博客
     var search_path = "search.xml";
     if (search_path.length === 0) {
       search_path = "search.xml";
-    } else if (search_path.endsWith("json")) {
+    } else if (/json$/i.test(search_path)) {
       isXml = false;
     }
     var path = "/" + search_path;

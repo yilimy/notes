@@ -167,10 +167,6 @@ NexT主题安装使用本地环境自行安装 git 和 Node.js 不会的可百�
 
 
   <title>Hexo+NexT主题配置备忘 | 量子广告</title>
-</head>
-
-<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
-
   
 
 
@@ -186,6 +182,9 @@ NexT主题安装使用本地环境自行安装 git 和 Node.js 不会的可百�
 
 
 
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
 
   
   
@@ -975,7 +974,7 @@ NexT主题安装使用本地环境自行安装 git 和 Node.js 不会的可百�
     var search_path = "search.xml";
     if (search_path.length === 0) {
       search_path = "search.xml";
-    } else if (search_path.endsWith("json")) {
+    } else if (/json$/i.test(search_path)) {
       isXml = false;
     }
     var path = "/" + search_path;
