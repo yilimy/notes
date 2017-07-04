@@ -944,7 +944,6 @@ pre .javascript .function {
   cursor: pointer;
   text-align: center;
   -webkit-transform: translateZ(0);
-  transition-property: bottom;
   transition-duration: 0.2s;
   transition-timing-function: ease-in-out;
   transition-delay: 0s;
@@ -1685,6 +1684,9 @@ pre .javascript .function {
 }
 .links-of-author {
   margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 .links-of-author a {
   display: inline-block;
@@ -1702,7 +1704,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #0088ec;
+  background: #d10f03;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2808,7 +2810,6 @@ pre .javascript .function {
   clear: both;
 }
 .links-of-author-item {
-  float: left;
   margin: 5px 0 0;
   width: 50%;
 }
@@ -2857,7 +2858,6 @@ pre .javascript .function {
   clear: both;
 }
 .links-of-blogroll-inline .links-of-blogroll-item {
-  float: left;
   margin: 5px 0 0;
   width: 50%;
 }
