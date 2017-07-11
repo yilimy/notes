@@ -134,7 +134,7 @@
   var CONFIG = {
     root: '/',
     scheme: 'Pisces',
-    sidebar: {"position":"right","display":"post","offset":12,"offset_float":12,"b2t":true,"scrollpercent":true},
+    sidebar: {"position":"right","display":"post","offset":12,"offset_float":12,"b2t":true,"scrollpercent":true,"onmobile":true},
     fancybox: false,
     motion: true,
     duoshuo: {
@@ -523,6 +523,7 @@
   </div>
 
   <aside id="sidebar" class="sidebar">
+    <div id="sidebar-dimmer"></div>
     <div class="sidebar-inner">
 
       
@@ -1172,8 +1173,8 @@
   
 
   
-  <script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.1.js"></script>
-  <script>AV.initialize("5d2ByI9BiUi594sxuEDX9VUB-gzGzoHsz", "YzW4cK33Hp9qfyhAdcGdYueo");</script>
+  <script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.4.js"></script>
+  <script>AV.initialize("5d2ByI9BiUi594sxuEDX9VUB-gzGzoHsz", "YzW4cK33Hp9qfyhAdcGdYueo");AV.useAVCloudUS();</script>
   <script>
     function showTime(Counter) {
       var query = new AV.Query(Counter);

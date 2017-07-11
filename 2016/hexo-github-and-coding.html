@@ -99,7 +99,7 @@
 <link href="/css/main.css?v=5.1.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="git,hexo,命令,备份," />
+  <meta name="keywords" content="hexo,git,备份,命令," />
 
 
 
@@ -150,7 +150,7 @@ hexo博客的安装和使用本文不再讲述。见文章：用hexo建博客
   var CONFIG = {
     root: '/',
     scheme: 'Pisces',
-    sidebar: {"position":"right","display":"post","offset":12,"offset_float":12,"b2t":true,"scrollpercent":true},
+    sidebar: {"position":"right","display":"post","offset":12,"offset_float":12,"b2t":true,"scrollpercent":true,"onmobile":true},
     fancybox: false,
     motion: true,
     duoshuo: {
@@ -536,13 +536,13 @@ hexo博客的安装和使用本文不再讲述。见文章：用hexo建博客
       
         <div class="post-tags">
           
-            <a href="/tags/git/" rel="tag"># git</a>
-          
             <a href="/tags/hexo/" rel="tag"># hexo</a>
           
-            <a href="/tags/命令/" rel="tag"># 命令</a>
+            <a href="/tags/git/" rel="tag"># git</a>
           
             <a href="/tags/备份/" rel="tag"># 备份</a>
+          
+            <a href="/tags/命令/" rel="tag"># 命令</a>
           
         </div>
       
@@ -609,6 +609,7 @@ hexo博客的安装和使用本文不再讲述。见文章：用hexo建博客
   </div>
 
   <aside id="sidebar" class="sidebar">
+    <div id="sidebar-dimmer"></div>
     <div class="sidebar-inner">
 
       
@@ -1283,8 +1284,8 @@ hexo博客的安装和使用本文不再讲述。见文章：用hexo建博客
   
 
   
-  <script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.1.js"></script>
-  <script>AV.initialize("5d2ByI9BiUi594sxuEDX9VUB-gzGzoHsz", "YzW4cK33Hp9qfyhAdcGdYueo");</script>
+  <script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.4.js"></script>
+  <script>AV.initialize("5d2ByI9BiUi594sxuEDX9VUB-gzGzoHsz", "YzW4cK33Hp9qfyhAdcGdYueo");AV.useAVCloudUS();</script>
   <script>
     function showTime(Counter) {
       var query = new AV.Query(Counter);
