@@ -5,7 +5,7 @@
   
 
 
-<html class="theme-next pisces use-motion" lang="zh-Hans">
+<html class="theme-next gemini use-motion" lang="zh-Hans">
 <head>
   <meta charset="UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -96,10 +96,10 @@
 
 <link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
 
-<link href="/css/main.css?v=5.1.1" rel="stylesheet" type="text/css" />
+<link href="/css/main.css?v=5.1.2" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="git,hexo,备份,命令," />
+  <meta name="keywords" content="git,hexo,命令,备份," />
 
 
 
@@ -110,7 +110,7 @@
 
 
 
-  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.1.1" />
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.1.2" />
 
 
 
@@ -149,9 +149,10 @@ hexo博客的安装和使用本文不再讲述。见文章：用hexo建博客
   var NexT = window.NexT || {};
   var CONFIG = {
     root: '/',
-    scheme: 'Pisces',
-    sidebar: {"position":"right","display":"post","offset":12,"offset_float":12,"b2t":true,"scrollpercent":true,"onmobile":true},
+    scheme: 'Gemini',
+    sidebar: {"position":"left","display":"post","offset":12,"offset_float":12,"b2t":true,"scrollpercent":true,"onmobile":true},
     fancybox: false,
+    tabs: true,
     motion: true,
     duoshuo: {
       userId: 'undefined',
@@ -200,7 +201,7 @@ hexo博客的安装和使用本文不再讲述。见文章：用hexo建博客
     
   
 
-  <div class="container sidebar-position-right page-post-detail ">
+  <div class="container sidebar-position-left page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -357,7 +358,11 @@ hexo博客的安装和使用本文不再讲述。见文章：用hexo建博客
   
   
 
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://blog.ynxiu.com/2016/hexo-github-and-coding.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -449,6 +454,9 @@ hexo博客的安装和使用本文不再讲述。见文章：用hexo建博客
       </header>
     
 
+    
+    
+    
     <div class="post-body" itemprop="articleBody">
 
       
@@ -485,6 +493,9 @@ hexo博客的安装和使用本文不再讲述。见文章：用hexo建博客
 
       
     </div>
+    
+    
+    
 
     <div>
       
@@ -496,41 +507,29 @@ hexo博客的安装和使用本文不再讲述。见文章：用hexo建博客
       
     </div>
 
-    <div>
-      
-        
+    
 
-      
-    </div>
+    
 
-    <div>
-      
-        
+    
+      <div>
+        <ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>本文作者：</strong>
+    Aixiu
+  </li>
+  <li class="post-copyright-link">
+    <strong>本文链接：</strong>
+    <a href="http://blog.ynxiu.com/2016/hexo-github-and-coding.html" title="将hexo博客同时托管到github和coding">http://blog.ynxiu.com/2016/hexo-github-and-coding.html</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版权声明： </strong>
+    本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/" rel="external nofollow" target="_blank">CC BY-NC-SA 3.0</a> 许可协议。转载请注明出处！
+  </li>
+</ul>
 
-      
-    </div>
-
-    <div>
-      
-        
-  <ul class="post-copyright">
-    <li class="post-copyright-author">
-      <strong>本文作者：</strong>
-      Aixiu
-    </li>
-    <li class="post-copyright-link">
-      <strong>本文链接：</strong>
-      <a href="http://blog.ynxiu.com/2016/hexo-github-and-coding.html" title="将hexo博客同时托管到github和coding">http://blog.ynxiu.com/2016/hexo-github-and-coding.html</a>
-    </li>
-    <li class="post-copyright-license">
-      <strong>版权声明： </strong>
-      本博客所有文章除特别声明外，均采用 <a href="http://creativecommons.org/licenses/by-nc-sa/3.0/cn/" rel="external nofollow" target="_blank">CC BY-NC-SA 3.0 CN</a> 许可协议。转载请注明出处！
-    </li>
-  </ul>
-
-
-      
-    </div>
+      </div>
+    
 
     <footer class="post-footer">
       
@@ -540,9 +539,9 @@ hexo博客的安装和使用本文不再讲述。见文章：用hexo建博客
           
             <a href="/tags/hexo/" rel="tag"># hexo</a>
           
-            <a href="/tags/备份/" rel="tag"># 备份</a>
-          
             <a href="/tags/命令/" rel="tag"># 命令</a>
+          
+            <a href="/tags/备份/" rel="tag"># 备份</a>
           
         </div>
       
@@ -576,6 +575,10 @@ hexo博客的安装和使用本文不再讲述。见文章：用hexo建博客
       
       
     </footer>
+  </div>
+  
+  
+  
   </article>
 
 
@@ -838,7 +841,7 @@ hexo博客的安装和使用本文不再讲述。见文章：用hexo建博客
 <div class="theme-info">
   主题 -
   <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
-    NexT.Pisces
+    NexT.Gemini
   </a>
 </div>
 
@@ -878,8 +881,6 @@ hexo博客的安装和使用本文不再讲述。见文章：用hexo建博客
 
 
 
-  
-
 
 
   
@@ -897,16 +898,13 @@ hexo博客的安装和使用本文不再讲述。见文章：用hexo建博客
   
   <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
 
-  
-  <script type="text/javascript" src="/lib/canvas-ribbon/canvas-ribbon.js"></script>
-
 
   
 
 
-  <script type="text/javascript" src="/js/src/utils.js?v=5.1.1"></script>
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.2"></script>
 
-  <script type="text/javascript" src="/js/src/motion.js?v=5.1.1"></script>
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.2"></script>
 
 
 
@@ -914,22 +912,22 @@ hexo博客的安装和使用本文不再讲述。见文章：用hexo建博客
   
 
 
-  <script type="text/javascript" src="/js/src/affix.js?v=5.1.1"></script>
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.2"></script>
 
-  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.1"></script>
-
-
-
-  
-  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.1"></script>
-<script type="text/javascript" src="/js/src/post-details.js?v=5.1.1"></script>
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.2"></script>
 
 
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.2"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.2"></script>
 
 
-  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.1"></script>
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.2"></script>
 
 
 
@@ -1409,6 +1407,6 @@ hexo博客的安装和使用本文不再讲述。见文章：用hexo建博客
 <script type="text/javascript" src="/js/src/duoshuoshuo.js"></script>
 <!-- 动感High起来 -->
 <link href="http://7u2ss1.com1.z0.glb.clouddn.com/harlem-shake-style.css" rel="stylesheet" type="text/css"/>
-
+  
 </body>
 </html>
