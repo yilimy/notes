@@ -1,6 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[python-pip升级]]></title>
+    <url>%2F2017%2Fpython-pip-update.html</url>
+    <content type="text"><![CDATA[今天在使用VSCode的时候提示我升级pip，因为电脑里同时安装了两个python版本，升级过程并不顺利，现把完整方法写出来。 升级过程因为是是两个不同的版本，所以一次升级一个。python2.X版本升级使用以下命令：python2 -m pip install --upgrade pip当看到12345Installing collected packages: pip Found existing installation: pip 8.1.1 Uninstalling pip-8.1.1: Successfully uninstalled pip-8.1.1Successfully installed pip-9.0.1 说明升级成功。然后升级python3.X使用以下命令：python3 -m pip install --upgrade pip当看到12345678$ python3 -m pip install --upgrade pipCollecting pip Using cached pip-9.0.1-py2.py3-none-any.whlInstalling collected packages: pip Found existing installation: pip 8.1.2 Uninstalling pip-8.1.2: Successfully uninstalled pip-8.1.2Successfully installed pip-9.0.1 说明升级成功。使用pip2 -V和 pip3 -V检查升级结果。12345$ pip2 -Vpip 9.0.1 from d:\python27\lib\site-packages (python 2.7)$ pip3 -Vpip 9.0.1 from d:\python35\lib\site-packages (python 3.5) 升级完成后使用PIP两个版本的PIP是独立的，所以使用方法稍有变化。以后只需运行pip2 install XXX和pip3 install XXX即可安装各自的python包。]]></content>
+      <categories>
+        <category>Python</category>
+      </categories>
+      <tags>
+        <tag>Python</tag>
+        <tag>pip</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[Git忽略规则及.gitignore规则不生效的解决办法]]></title>
     <url>%2F2017%2Fgitignore-Effective-rules.html</url>
     <content type="text"><![CDATA[引子在git中如果想忽略掉某个文件，不让这个文件提交到版本库中，可以使用修改根目录中 .gitignore 文件的方法（如无，则需自己手工建立此文件）。这个文件每一行保存了一个匹配的规则例如：1234567# 此为注释 – 将被 Git 忽略 *.a # 忽略所有 .a 结尾的文件!lib.a # 但 lib.a 除外/TODO # 仅仅忽略项目根目录下的 TODO 文件，不包括 subdir/TODObuild/ # 忽略 build/ 目录下的所有文件doc/*.txt # 会忽略 doc/notes.txt 但不包括 doc/server/arch.txt 处理方法规则很简单，不做过多解释，但是有时候在项目开发过程中，突然心血来潮想把某些目录或文件加入忽略规则，按照上述方法定义后发现并未生效，原因是.gitignore只能忽略那些原来没有被track的文件，如果某些文件已经被纳入了版本管理中，则修改.gitignore是无效的。那么解决方法就是先把本地缓存删除（改变成未track状态），然后再提交：123git rm -r --cached .git add .git commit -m 'update .gitignore']]></content>
@@ -47,8 +59,8 @@
       </categories>
       <tags>
         <tag>Hexo</tag>
-        <tag>Seo</tag>
         <tag>Google</tag>
+        <tag>Seo</tag>
       </tags>
   </entry>
   <entry>
@@ -121,8 +133,8 @@
         <category>学习笔记</category>
       </categories>
       <tags>
-        <tag>git</tag>
         <tag>hexo</tag>
+        <tag>git</tag>
         <tag>命令</tag>
         <tag>备份</tag>
       </tags>
@@ -135,8 +147,8 @@
         <category>学习笔记</category>
       </categories>
       <tags>
-        <tag>git</tag>
         <tag>hexo</tag>
+        <tag>git</tag>
         <tag>命令</tag>
         <tag>备份</tag>
       </tags>
@@ -149,8 +161,8 @@
         <category>学习笔记</category>
       </categories>
       <tags>
-        <tag>git</tag>
         <tag>hexo</tag>
+        <tag>git</tag>
         <tag>命令</tag>
         <tag>备份</tag>
       </tags>
@@ -163,8 +175,8 @@
         <category>学习笔记</category>
       </categories>
       <tags>
-        <tag>git</tag>
         <tag>hexo</tag>
+        <tag>git</tag>
         <tag>命令</tag>
         <tag>备份</tag>
       </tags>

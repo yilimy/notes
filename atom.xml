@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.ynxiu.com/"/>
-  <updated>2017-04-19T02:19:36.216Z</updated>
+  <updated>2017-08-08T09:02:21.945Z</updated>
   <id>http://blog.ynxiu.com/</id>
   
   <author>
@@ -14,6 +14,36 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>python-pip升级</title>
+    <link href="http://blog.ynxiu.com/2017/python-pip-update.html"/>
+    <id>http://blog.ynxiu.com/2017/python-pip-update.html</id>
+    <published>2017-08-08T08:41:25.000Z</published>
+    <updated>2017-08-08T09:02:21.945Z</updated>
+    
+    <content type="html">&lt;p&gt;今天在使用&lt;code&gt;VSCode&lt;/code&gt;的时候提示我升级pip，因为电脑里同时安装了两个&lt;code&gt;python&lt;/code&gt;版本，升级过程并不顺利，现把完整方法写出来。&lt;br&gt;&lt;img src=&quot;http://7u2ss1.com1.z0.glb.clouddn.com/python01.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+&lt;h2 id=&quot;升级过程&quot;&gt;&lt;a href=&quot;#升级过程&quot; class=&quot;headerlink&quot; title=&quot;升级过程&quot;&gt;&lt;/a&gt;升级过程&lt;/h2&gt;&lt;p&gt;因为是是两个不同的版本，所以一次升级一个。&lt;code&gt;python2.X&lt;/code&gt;版本升级&lt;br&gt;使用以下命令：&lt;br&gt;&lt;code&gt;python2 -m pip install --upgrade pip&lt;/code&gt;&lt;br&gt;当看到&lt;br&gt;&lt;figure class=&quot;highlight css&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;selector-tag&quot;&gt;Installing&lt;/span&gt; &lt;span class=&quot;selector-tag&quot;&gt;collected&lt;/span&gt; &lt;span class=&quot;selector-tag&quot;&gt;packages&lt;/span&gt;: &lt;span class=&quot;selector-tag&quot;&gt;pip&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  &lt;span class=&quot;selector-tag&quot;&gt;Found&lt;/span&gt; &lt;span class=&quot;selector-tag&quot;&gt;existing&lt;/span&gt; &lt;span class=&quot;selector-tag&quot;&gt;installation&lt;/span&gt;: &lt;span class=&quot;selector-tag&quot;&gt;pip&lt;/span&gt; 8&lt;span class=&quot;selector-class&quot;&gt;.1&lt;/span&gt;&lt;span class=&quot;selector-class&quot;&gt;.1&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;selector-tag&quot;&gt;Uninstalling&lt;/span&gt; &lt;span class=&quot;selector-tag&quot;&gt;pip-8&lt;/span&gt;&lt;span class=&quot;selector-class&quot;&gt;.1&lt;/span&gt;&lt;span class=&quot;selector-class&quot;&gt;.1&lt;/span&gt;:&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;      &lt;span class=&quot;selector-tag&quot;&gt;Successfully&lt;/span&gt; &lt;span class=&quot;selector-tag&quot;&gt;uninstalled&lt;/span&gt; &lt;span class=&quot;selector-tag&quot;&gt;pip-8&lt;/span&gt;&lt;span class=&quot;selector-class&quot;&gt;.1&lt;/span&gt;&lt;span class=&quot;selector-class&quot;&gt;.1&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;selector-tag&quot;&gt;Successfully&lt;/span&gt; &lt;span class=&quot;selector-tag&quot;&gt;installed&lt;/span&gt; &lt;span class=&quot;selector-tag&quot;&gt;pip-9&lt;/span&gt;&lt;span class=&quot;selector-class&quot;&gt;.0&lt;/span&gt;&lt;span class=&quot;selector-class&quot;&gt;.1&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;说明升级成功。然后升级&lt;code&gt;python3.X&lt;/code&gt;使用以下命令：&lt;br&gt;&lt;code&gt;python3 -m pip install --upgrade pip&lt;/code&gt;&lt;br&gt;当看到&lt;br&gt;&lt;figure class=&quot;highlight mipsasm&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$ python3 -m pip &lt;span class=&quot;keyword&quot;&gt;install &lt;/span&gt;--upgrade pip&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Collecting pip&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  Using &lt;span class=&quot;keyword&quot;&gt;cached &lt;/span&gt;pip-9.&lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;.&lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;-py2.py3-none-any.whl&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;Installing &lt;/span&gt;collected packages: pip&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  Found existing &lt;span class=&quot;keyword&quot;&gt;installation: &lt;/span&gt;pip &lt;span class=&quot;number&quot;&gt;8&lt;/span&gt;.&lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;.&lt;span class=&quot;number&quot;&gt;2&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    Uninstalling pip-8.&lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;.&lt;span class=&quot;number&quot;&gt;2&lt;/span&gt;:&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;      Successfully uninstalled pip-8.&lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;.&lt;span class=&quot;number&quot;&gt;2&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Successfully &lt;span class=&quot;keyword&quot;&gt;installed &lt;/span&gt;pip-9.&lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;.&lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;说明升级成功。&lt;br&gt;使用&lt;code&gt;pip2 -V&lt;/code&gt;和 &lt;code&gt;pip3 -V&lt;/code&gt;检查升级结果。&lt;br&gt;&lt;figure class=&quot;highlight crystal&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$ pip2 -V&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;pip &lt;span class=&quot;number&quot;&gt;9.0&lt;/span&gt;.&lt;span class=&quot;number&quot;&gt;1&lt;/span&gt; from &lt;span class=&quot;symbol&quot;&gt;d:&lt;/span&gt;\python27\&lt;span class=&quot;class&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;lib&lt;/span&gt;\&lt;span class=&quot;title&quot;&gt;site&lt;/span&gt;-&lt;span class=&quot;title&quot;&gt;packages&lt;/span&gt; (&lt;span class=&quot;title&quot;&gt;python&lt;/span&gt; 2.7)&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;$ pip3 -V&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;pip &lt;span class=&quot;number&quot;&gt;9.0&lt;/span&gt;.&lt;span class=&quot;number&quot;&gt;1&lt;/span&gt; from &lt;span class=&quot;symbol&quot;&gt;d:&lt;/span&gt;\python35\&lt;span class=&quot;class&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;lib&lt;/span&gt;\&lt;span class=&quot;title&quot;&gt;site&lt;/span&gt;-&lt;span class=&quot;title&quot;&gt;packages&lt;/span&gt; (&lt;span class=&quot;title&quot;&gt;python&lt;/span&gt; 3.5)&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;h2 id=&quot;升级完成后使用PIP&quot;&gt;&lt;a href=&quot;#升级完成后使用PIP&quot; class=&quot;headerlink&quot; title=&quot;升级完成后使用PIP&quot;&gt;&lt;/a&gt;升级完成后使用PIP&lt;/h2&gt;&lt;p&gt;两个版本的PIP是独立的，所以使用方法稍有变化。以后只需运行&lt;code&gt;pip2 install XXX&lt;/code&gt;和&lt;code&gt;pip3 install XXX&lt;/code&gt;即可安装各自的&lt;code&gt;python&lt;/code&gt;包。&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;今天在使用&lt;code&gt;VSCode&lt;/code&gt;的时候提示我升级pip，因为电脑里同时安装了两个&lt;code&gt;python&lt;/code&gt;版本，升级过程并不顺利，现把完整方法写出来。&lt;br&gt;&lt;img src=&quot;http://7u2ss1.com1.z0.glb.clouddn.com/python01.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="Python" scheme="http://blog.ynxiu.com/categories/Python/"/>
+    
+    
+      <category term="Python" scheme="http://blog.ynxiu.com/tags/Python/"/>
+    
+      <category term="pip" scheme="http://blog.ynxiu.com/tags/pip/"/>
+    
+  </entry>
   
   <entry>
     <title>Git忽略规则及.gitignore规则不生效的解决办法</title>
@@ -220,9 +250,9 @@
     
       <category term="Hexo" scheme="http://blog.ynxiu.com/tags/Hexo/"/>
     
-      <category term="Seo" scheme="http://blog.ynxiu.com/tags/Seo/"/>
-    
       <category term="Google" scheme="http://blog.ynxiu.com/tags/Google/"/>
+    
+      <category term="Seo" scheme="http://blog.ynxiu.com/tags/Seo/"/>
     
   </entry>
   
@@ -469,9 +499,9 @@
       <category term="学习笔记" scheme="http://blog.ynxiu.com/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
     
     
-      <category term="git" scheme="http://blog.ynxiu.com/tags/git/"/>
-    
       <category term="hexo" scheme="http://blog.ynxiu.com/tags/hexo/"/>
+    
+      <category term="git" scheme="http://blog.ynxiu.com/tags/git/"/>
     
       <category term="命令" scheme="http://blog.ynxiu.com/tags/%E5%91%BD%E4%BB%A4/"/>
     
@@ -530,9 +560,9 @@
       <category term="学习笔记" scheme="http://blog.ynxiu.com/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
     
     
-      <category term="git" scheme="http://blog.ynxiu.com/tags/git/"/>
-    
       <category term="hexo" scheme="http://blog.ynxiu.com/tags/hexo/"/>
+    
+      <category term="git" scheme="http://blog.ynxiu.com/tags/git/"/>
     
       <category term="命令" scheme="http://blog.ynxiu.com/tags/%E5%91%BD%E4%BB%A4/"/>
     
@@ -651,9 +681,9 @@
       <category term="学习笔记" scheme="http://blog.ynxiu.com/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
     
     
-      <category term="git" scheme="http://blog.ynxiu.com/tags/git/"/>
-    
       <category term="hexo" scheme="http://blog.ynxiu.com/tags/hexo/"/>
+    
+      <category term="git" scheme="http://blog.ynxiu.com/tags/git/"/>
     
       <category term="命令" scheme="http://blog.ynxiu.com/tags/%E5%91%BD%E4%BB%A4/"/>
     
@@ -703,9 +733,9 @@
       <category term="学习笔记" scheme="http://blog.ynxiu.com/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
     
     
-      <category term="git" scheme="http://blog.ynxiu.com/tags/git/"/>
-    
       <category term="hexo" scheme="http://blog.ynxiu.com/tags/hexo/"/>
+    
+      <category term="git" scheme="http://blog.ynxiu.com/tags/git/"/>
     
       <category term="命令" scheme="http://blog.ynxiu.com/tags/%E5%91%BD%E4%BB%A4/"/>
     
