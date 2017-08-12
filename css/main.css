@@ -319,6 +319,16 @@ dd {
   margin: 0;
   padding: 0;
 }
+kbd {
+  border: 1px solid #ccc;
+  border-radius: 0.2em;
+  box-shadow: 0.1em 0.1em 0.2em rgba(0,0,0,0.1);
+  background-color: #f9f9f9;
+  font-family: inherit;
+  background-image: -webkit-linear-gradient(top, #eee, #fff, #eee);
+  padding: 0.1em 0.3em;
+  white-space: nowrap;
+}
 .text-left {
   text-align: left;
 }
@@ -1862,7 +1872,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #de0dff;
+  background: #ff9173;
 }
 .links-of-blogroll {
   font-size: 13px;
