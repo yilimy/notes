@@ -9,7 +9,7 @@
   <id>http://blog.ynxiu.com/</id>
   
   <author>
-    <name>Aixiu</name>
+    <name>Ynxiu.com</name>
     
   </author>
   
@@ -250,9 +250,9 @@
     
       <category term="Hexo" scheme="http://blog.ynxiu.com/tags/Hexo/"/>
     
-      <category term="Seo" scheme="http://blog.ynxiu.com/tags/Seo/"/>
-    
       <category term="Google" scheme="http://blog.ynxiu.com/tags/Google/"/>
+    
+      <category term="Seo" scheme="http://blog.ynxiu.com/tags/Seo/"/>
     
   </entry>
   
