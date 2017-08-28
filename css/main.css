@@ -279,6 +279,7 @@ p {
 a {
   color: #555;
   text-decoration: none;
+  outline: none;
   border-bottom: 1px solid #999;
   word-wrap: break-word;
 }
@@ -1907,7 +1908,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #e34e60;
+  background: #67114f;
 }
 .links-of-blogroll {
   font-size: 13px;
