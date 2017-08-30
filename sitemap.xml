@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://blog.ynxiu.com/categories/index.html</loc>
+    
+    <lastmod>2017-08-30T01:15:22.811Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://blog.ynxiu.com/2017/python-pip-update.html</loc>
     
     <lastmod>2017-08-08T09:02:21.945Z</lastmod>
@@ -131,13 +138,6 @@
     <loc>http://blog.ynxiu.com/tags/index.html</loc>
     
     <lastmod>2016-04-27T03:12:16.469Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://blog.ynxiu.com/categories/index.html</loc>
-    
-    <lastmod>2016-04-27T03:12:16.467Z</lastmod>
     
   </url>
   
