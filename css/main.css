@@ -1888,9 +1888,6 @@ pre .javascript .function {
 }
 .links-of-author {
   margin-top: 20px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
 }
 .links-of-author a {
   display: inline-block;
@@ -1908,7 +1905,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #09f74e;
+  background: #ff49b3;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2980,6 +2977,11 @@ pre .javascript .function {
 }
 .feed-link a:hover i {
   color: #e34603;
+}
+.links-of-author {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 .links-of-author-item {
   margin: 5px 0 0;
